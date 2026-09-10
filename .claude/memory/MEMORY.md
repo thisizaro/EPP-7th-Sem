@@ -1,0 +1,3 @@
+- [EPP course and exam structure](epp-course-and-exam-structure.md) — EX40003 modules, lecture→module map, and mark weightings
+- [EPP slide content gaps](epp-slide-content-gaps.md) — image-only slides and the reconstructed productivity/reliability numbers
+- [Claude memory synced through this repo](claude-memory-synced-through-this-repo.md) — memory dir is a symlink into .claude/memory so it follows the repo across machines

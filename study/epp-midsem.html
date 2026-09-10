@@ -1,0 +1,601 @@
+<title>EPP Revision Manual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  --paper:#F2F4F1; --sheet:#FBFCFA; --ink:#14202B; --ink-2:#3C4C58; --ink-3:#6B7B85;
+  --rule:#C9D2CC; --rule-2:#E1E7E2; --blue:#2B5F8E; --blue-soft:#E8EFF5;
+  --signal:#D9531E; --signal-soft:#FBEAE1; --good:#3E7A52; --good-soft:#E6F0E8;
+  --warn:#946A16; --warn-soft:#F8F0DC;
+  --f-disp:"IBM Plex Sans Condensed",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --f-body:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sp:clamp(1rem,2.5vw,1.6rem);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E141A; --sheet:#151E26; --ink:#DFE7E2; --ink-2:#AEBCC2; --ink-3:#7C8C95;
+    --rule:#2A3842; --rule-2:#1E2A33; --blue:#79B0DC; --blue-soft:#16242F;
+    --signal:#F2793F; --signal-soft:#2C1A12; --good:#79BE90; --good-soft:#15241A;
+    --warn:#D9AE58; --warn-soft:#2A2314;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E141A; --sheet:#151E26; --ink:#DFE7E2; --ink-2:#AEBCC2; --ink-3:#7C8C95;
+  --rule:#2A3842; --rule-2:#1E2A33; --blue:#79B0DC; --blue-soft:#16242F;
+  --signal:#F2793F; --signal-soft:#2C1A12; --good:#79BE90; --good-soft:#15241A;
+  --warn:#D9AE58; --warn-soft:#2A2314;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--f-body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--f-disp); font-weight:600; text-wrap:balance; margin:0; line-height:1.15}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--signal); outline-offset:2px; border-radius:2px}
+code,.mono{font-family:var(--f-mono)}
+
+/* ---------- title block ---------- */
+.titleblock{border-bottom:2px solid var(--ink); background:var(--sheet)}
+.tb-inner{max-width:1240px; margin:0 auto; padding:calc(var(--sp)*1.1) var(--sp)}
+.tb-top{display:flex; flex-wrap:wrap; align-items:flex-end; gap:.9rem 1.6rem; justify-content:space-between}
+.tb-eyebrow{font-family:var(--f-mono); font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--signal); font-weight:600}
+.tb-title{font-size:clamp(1.9rem,5.2vw,3rem); letter-spacing:-.015em; margin-top:.28rem}
+.tb-sub{font-size:.95rem; color:var(--ink-2); max-width:56ch; margin-top:.5rem}
+.tb-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(118px,1fr)); border:1px solid var(--rule); margin-top:1.1rem}
+.tb-cell{padding:.5rem .7rem; border-right:1px solid var(--rule)}
+.tb-cell:last-child{border-right:0}
+.tb-k{font-family:var(--f-mono); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+.tb-v{font-family:var(--f-disp); font-size:1rem; font-weight:600; margin-top:.15rem; font-variant-numeric:tabular-nums}
+@media(max-width:560px){.tb-cell{border-bottom:1px solid var(--rule)}}
+
+/* ---------- shell ---------- */
+.shell{max-width:1240px; margin:0 auto; display:grid; grid-template-columns:250px minmax(0,1fr); gap:0 calc(var(--sp)*1.6); padding:0 var(--sp)}
+@media(max-width:900px){.shell{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- rail ---------- */
+.rail{position:sticky; top:0; align-self:start; max-height:100vh; overflow-y:auto; padding:calc(var(--sp)*1.1) 0 var(--sp); border-right:1px solid var(--rule-2)}
+@media(max-width:900px){.rail{position:static; max-height:none; border-right:0; border-bottom:1px solid var(--rule); padding-bottom:.8rem}}
+.rail-h{font-family:var(--f-mono); font-size:.62rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); padding:0 .8rem .5rem 0}
+.rail ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column}
+@media(max-width:900px){.rail ol{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:0 .6rem}}
+.rail li{display:flex; align-items:center; gap:.5rem; padding-right:.7rem}
+.rail a{display:flex; gap:.55rem; align-items:baseline; flex:1; min-width:0; text-decoration:none; color:var(--ink-2); font-family:var(--f-disp); font-size:.86rem; padding:.32rem 0; border-bottom:1px solid transparent}
+.rail a:hover{color:var(--ink)}
+.rail a.on{color:var(--signal); font-weight:600}
+.rail .n{font-family:var(--f-mono); font-size:.66rem; color:var(--ink-3); font-variant-numeric:tabular-nums; flex:none}
+.rail a.on .n{color:var(--signal)}
+.rail .lbl{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.tick{flex:none; width:15px; height:15px; border:1px solid var(--rule); background:transparent; border-radius:2px; cursor:pointer; padding:0; display:grid; place-items:center}
+.tick[aria-pressed="true"]{background:var(--good); border-color:var(--good)}
+.tick svg{width:9px; height:9px; stroke:var(--sheet); stroke-width:2.6; fill:none; opacity:0}
+.tick[aria-pressed="true"] svg{opacity:1}
+
+/* progress meter */
+.meter{margin:.9rem .7rem 1rem 0}
+.meter-bar{height:4px; background:var(--rule-2); border-radius:2px; overflow:hidden}
+.meter-fill{height:100%; width:0%; background:var(--good); transition:width .3s ease}
+.meter-txt{display:flex; justify-content:space-between; gap:.5rem; font-family:var(--f-mono); font-size:.62rem; letter-spacing:.06em; color:var(--ink-3); margin-top:.4rem; text-transform:uppercase}
+.sync{font-family:var(--f-mono); font-size:.58rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); margin-top:.5rem; display:flex; align-items:center; gap:.35rem}
+.sync .dot{width:5px; height:5px; border-radius:50%; background:var(--ink-3); flex:none}
+.sync.live .dot{background:var(--good)}
+.sync.live{color:var(--good)}
+
+/* ---------- content ---------- */
+main{padding:calc(var(--sp)*1.2) 0 4rem; min-width:0}
+.sheet{padding-bottom:calc(var(--sp)*1.6); margin-bottom:calc(var(--sp)*1.6); border-bottom:1px solid var(--rule-2); scroll-margin-top:1rem}
+.sheet:last-child{border-bottom:0}
+.sh-head{display:flex; align-items:flex-start; gap:1rem; justify-content:space-between; border-bottom:2px solid var(--ink); padding-bottom:.55rem; margin-bottom:1.1rem}
+.sh-num{font-family:var(--f-mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+.sh-num b{color:var(--signal); font-weight:600}
+.sh-title{font-size:clamp(1.3rem,3.2vw,1.75rem); letter-spacing:-.01em; margin-top:.2rem}
+.revise{flex:none; display:flex; align-items:center; gap:.4rem; font-family:var(--f-mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); background:none; border:1px solid var(--rule); border-radius:2px; padding:.3rem .5rem; cursor:pointer}
+.revise[aria-pressed="true"]{color:var(--good); border-color:var(--good); background:var(--good-soft)}
+main p{margin:0 0 .85rem; max-width:66ch}
+main h3{font-size:1.02rem; margin:1.5rem 0 .5rem; color:var(--blue); letter-spacing:.005em}
+main h4{font-family:var(--f-mono); font-size:.68rem; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); margin:1.2rem 0 .45rem}
+main ul,main ol{margin:0 0 .9rem; padding-left:1.15rem; max-width:66ch}
+main li{margin-bottom:.3rem}
+main li::marker{color:var(--ink-3)}
+strong{font-weight:600}
+.term{font-weight:600; color:var(--ink)}
+</style>
+<style>
+/* definition — the thing you must be able to write verbatim */
+.def{border-left:3px solid var(--signal); background:var(--signal-soft); padding:.7rem .9rem; margin:0 0 1rem; max-width:66ch}
+.def .lab{font-family:var(--f-mono); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--signal); font-weight:600; display:block; margin-bottom:.25rem}
+.def p{margin:0}
+.def p+p{margin-top:.5rem}
+
+/* flag for content the decks don't contain */
+.flag{border:1px dashed var(--warn); background:var(--warn-soft); padding:.65rem .85rem; margin:0 0 1.1rem; max-width:66ch; font-size:.88rem; color:var(--ink-2)}
+.flag b{font-family:var(--f-disp); color:var(--warn); text-transform:uppercase; font-size:.7rem; letter-spacing:.11em; display:block; margin-bottom:.2rem}
+
+/* tables */
+.tw{overflow-x:auto; margin:0 0 1.1rem; border:1px solid var(--rule)}
+table{border-collapse:collapse; width:100%; font-size:.88rem; font-family:var(--f-disp); background:var(--sheet)}
+th,td{text-align:left; padding:.45rem .65rem; border-bottom:1px solid var(--rule-2); border-right:1px solid var(--rule-2); vertical-align:top}
+th{background:var(--blue-soft); color:var(--blue); font-family:var(--f-mono); font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; white-space:nowrap}
+tr:last-child td{border-bottom:0}
+th:last-child,td:last-child{border-right:0}
+td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+
+/* formula */
+.fx{font-family:var(--f-mono); background:var(--sheet); border:1px solid var(--rule); border-left:3px solid var(--blue); padding:.6rem .8rem; margin:0 0 .8rem; font-size:.92rem; overflow-x:auto; max-width:66ch}
+.fx .why{display:block; font-family:var(--f-body); font-size:.82rem; color:var(--ink-3); margin-top:.35rem}
+.fxgrid{display:grid; gap:.55rem; margin-bottom:1rem}
+
+/* worked example */
+.wk{border:1px solid var(--rule); background:var(--sheet); margin:0 0 1.1rem; max-width:66ch}
+.wk-h{font-family:var(--f-mono); font-size:.62rem; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); padding:.45rem .8rem; border-bottom:1px solid var(--rule-2); background:var(--blue-soft); color:var(--blue)}
+.wk-b{padding:.7rem .8rem}
+.wk-b p{margin:0 0 .5rem}
+.wk-b p:last-child{margin-bottom:0}
+.step{font-family:var(--f-mono); font-size:.85rem; display:block; padding:.15rem 0; overflow-x:auto}
+.ans{font-family:var(--f-mono); font-weight:600; color:var(--signal); background:var(--signal-soft); display:inline-block; padding:.12rem .4rem; margin-top:.3rem}
+
+/* q & a */
+.qa{border:1px solid var(--rule); background:var(--sheet); margin-bottom:.7rem}
+.qa summary{cursor:pointer; padding:.62rem .8rem; display:flex; gap:.7rem; align-items:baseline; font-family:var(--f-disp); font-weight:600; font-size:.97rem; list-style:none}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"SHOW"; margin-left:auto; font-family:var(--f-mono); font-size:.58rem; letter-spacing:.12em; color:var(--ink-3); flex:none; align-self:center; border:1px solid var(--rule); padding:.15rem .35rem}
+.qa[open] summary::after{content:"HIDE"; color:var(--signal); border-color:var(--signal)}
+.qa .mk{font-family:var(--f-mono); font-size:.62rem; color:var(--signal); flex:none; font-weight:600}
+.qa-b{padding:0 .8rem .75rem; border-top:1px solid var(--rule-2); margin-top:0}
+.qa-b>*:first-child{margin-top:.7rem}
+.qa-b p,.qa-b ul,.qa-b ol{font-size:.92rem}
+
+/* flashcards */
+.cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:.6rem}
+.card{position:relative; min-height:112px; border:1px solid var(--rule); background:var(--sheet); cursor:pointer; padding:.65rem .75rem; text-align:left; font:inherit; color:inherit; display:flex; flex-direction:column; gap:.35rem; justify-content:center}
+.card .q{font-family:var(--f-disp); font-weight:600; font-size:.92rem}
+.card .a{font-size:.85rem; color:var(--ink-2); display:none}
+.card.flip .q{display:none}
+.card.flip .a{display:block}
+.card::after{content:"TAP"; position:absolute; top:.4rem; right:.5rem; font-family:var(--f-mono); font-size:.52rem; letter-spacing:.1em; color:var(--ink-3)}
+.card.flip::after{content:"BACK"; color:var(--signal)}
+
+/* diagram */
+figure{margin:0 0 1.2rem; border:1px solid var(--rule); background:var(--sheet); padding:.8rem; max-width:66ch}
+figure svg{display:block; width:100%; height:auto}
+figcaption{font-family:var(--f-mono); font-size:.63rem; letter-spacing:.06em; color:var(--ink-3); margin-top:.5rem; line-height:1.5}
+.svg-lbl{font-family:"IBM Plex Mono",monospace; font-size:8px; letter-spacing:.06em; fill:var(--ink-3)}
+.svg-lbl-b{font-family:"IBM Plex Mono",monospace; font-size:8.5px; font-weight:600; fill:var(--ink-2)}
+
+/* misc */
+.src{font-family:var(--f-mono); font-size:.6rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); border:1px solid var(--rule-2); padding:.14rem .38rem; display:inline-block; margin-bottom:.9rem}
+.two{display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:0 1.4rem}
+.two>*{min-width:0}
+footer{border-top:1px solid var(--rule); margin-top:1.5rem; padding-top:1rem; font-family:var(--f-mono); font-size:.66rem; color:var(--ink-3); line-height:1.7}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+<header class="titleblock">
+  <div class="tb-inner">
+    <div class="tb-top">
+      <div>
+        <div class="tb-eyebrow">Mid-Semester Revision · Modules I &amp; II</div>
+        <h1 class="tb-title">Engineering Professional Practice</h1>
+        <p class="tb-sub">Everything the nine lecture decks cover, rebuilt as answers you can write in the hall — plus the two syllabus topics the decks leave out.</p>
+      </div>
+      <div class="tb-grid" style="flex:1 1 320px">
+        <div class="tb-cell"><div class="tb-k">Course</div><div class="tb-v">EX40003</div></div>
+        <div class="tb-cell"><div class="tb-k">Paper</div><div class="tb-v">Mid-Sem</div></div>
+        <div class="tb-cell"><div class="tb-k">Marks</div><div class="tb-v">20</div></div>
+        <div class="tb-cell"><div class="tb-k">Duration</div><div class="tb-v">90 min</div></div>
+        <div class="tb-cell"><div class="tb-k">Books</div><div class="tb-v">Closed</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="Contents">
+    <div class="meter">
+      <div class="meter-bar"><div class="meter-fill" id="mfill"></div></div>
+      <div class="meter-txt"><span id="mtxt">0 of 15 revised</span></div>
+      <div class="sync" id="sync"><span class="dot"></span><span id="synctxt">This device only</span></div>
+    </div>
+    <div class="rail-h">Contents</div>
+    <ol id="toc">
+      <li><button class="tick" data-for="s1" aria-label="Mark sheet 1 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s1"><span class="n">01</span><span class="lbl">Discipline &amp; Profession</span></a></li>
+      <li><button class="tick" data-for="s2" aria-label="Mark sheet 2 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s2"><span class="n">02</span><span class="lbl">The Practising Engineer</span></a></li>
+      <li><button class="tick" data-for="s3" aria-label="Mark sheet 3 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s3"><span class="n">03</span><span class="lbl">Design for Safety</span></a></li>
+      <li><button class="tick" data-for="s4" aria-label="Mark sheet 4 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s4"><span class="n">04</span><span class="lbl">Design for Reliability</span></a></li>
+      <li><button class="tick" data-for="s5" aria-label="Mark sheet 5 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s5"><span class="n">05</span><span class="lbl">Reliability Mathematics</span></a></li>
+      <li><button class="tick" data-for="s6" aria-label="Mark sheet 6 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s6"><span class="n">06</span><span class="lbl">Quality: Definitions</span></a></li>
+      <li><button class="tick" data-for="s7" aria-label="Mark sheet 7 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s7"><span class="n">07</span><span class="lbl">Quality: Gurus &amp; Tools</span></a></li>
+      <li><button class="tick" data-for="s8" aria-label="Mark sheet 8 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s8"><span class="n">08</span><span class="lbl">Productivity</span></a></li>
+      <li><button class="tick" data-for="s9" aria-label="Mark sheet 9 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s9"><span class="n">09</span><span class="lbl">Complexity &amp; Risk</span></a></li>
+      <li><button class="tick" data-for="s10" aria-label="Mark sheet 10 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s10"><span class="n">10</span><span class="lbl">Project Management</span></a></li>
+      <li><button class="tick" data-for="s11" aria-label="Mark sheet 11 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s11"><span class="n">11</span><span class="lbl">Managerial Functions</span></a></li>
+      <li><button class="tick" data-for="s12" aria-label="Mark sheet 12 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s12"><span class="n">12</span><span class="lbl">Costing &amp; Accounting</span></a></li>
+      <li><button class="tick" data-for="s13" aria-label="Mark sheet 13 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s13"><span class="n">13</span><span class="lbl">Formula Sheet</span></a></li>
+      <li><button class="tick" data-for="s14" aria-label="Mark sheet 14 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s14"><span class="n">14</span><span class="lbl">Practice Questions</span></a></li>
+      <li><button class="tick" data-for="s15" aria-label="Mark sheet 15 revised"><svg viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2.5"/></svg></button><a href="#s15"><span class="n">15</span><span class="lbl">Rapid Recall</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+  <section class="sheet" id="s1">
+    <div class="sh-head">
+      <div><div class="sh-num">Sheet <b>01</b> · Module I · Lecture 1</div><h2 class="sh-title">Engineering as a Discipline and a Profession</h2></div>
+      <button class="revise" data-for="s1" aria-pressed="false">Revised</button>
+    </div>
+
+    <div class="def"><span class="lab">Definition — learn verbatim</span>
+      <p>Engineering is a professional discipline that combines knowledge from <strong>physics, mathematics and material science</strong> with <strong>innovation, analysis and design</strong> to develop technologies and solutions that meet human needs in a <strong>safe, efficient and sustainable</strong> way.</p>
+    </div>
+
+    <h3>Engineering as a discipline</h3>
+    <p>A branch of academic study and systematic knowledge that applies scientific and mathematical principles to solve real-world problems. It is about <span class="term">generating</span> knowledge: learning theories, developing technologies, designing systems and innovating.</p>
+    <h4>Characteristics</h4>
+    <ul>
+      <li>Interdisciplinary in nature</li>
+      <li>Strong foundation in mathematics and science</li>
+      <li>Involves design, analysis and experimentation</li>
+      <li>Emphasis on continual improvement and lifelong learning</li>
+    </ul>
+    <h4>Six key components (a common 5-mark question)</h4>
+    <ol>
+      <li><span class="term">Scientific foundation</span> — laws of nature: how forces act, energy flows, materials behave.</li>
+      <li><span class="term">Mathematical modelling</span> — mathematics is the language of engineering; equations model systems, predict outcomes and optimise performance.</li>
+      <li><span class="term">Design thinking</span> — define a problem, brainstorm, model and simulate, improve through iteration.</li>
+      <li><span class="term">Technical knowledge</span> — each branch has its own technical core.</li>
+      <li><span class="term">Experimentation and analysis</span> — labs validate theory; collect data, analyse results.</li>
+      <li><span class="term">Innovation and research</span> — new materials, energy-efficient systems, better processes.</li>
+    </ol>
+
+    <h3>Engineering as a profession</h3>
+    <p>The <span class="term">practical application</span> of engineering knowledge to design, develop, operate and maintain systems, products and processes that serve society — done responsibly, ethically and efficiently.</p>
+    <h4>Six key elements</h4>
+    <ol>
+      <li><span class="term">Application of knowledge</span> — e.g. a mechanical engineer designs an energy-efficient HVAC system for a hospital.</li>
+      <li><span class="term">Professional responsibility</span> — decisions affect people, property and environment; engineers are trusted to act in the public interest.</li>
+      <li><span class="term">Ethics and integrity</span> — honesty, accountability, fairness; safety over profit. An engineer must refuse to certify a faulty design even under management pressure.</li>
+      <li><span class="term">Licence and certification</span> — in India, a <strong>Chartered Engineer (CE)</strong> registered with the <strong>Institution of Engineers (India), IEI</strong>, signs off government work for CPWD, Indian Railways or NHAI. In the USA, a <strong>Professional Engineer (PE)</strong> licence is needed to approve public structural designs.</li>
+      <li><span class="term">Teamwork and communication</span> — multidisciplinary work with architects, doctors, clients, government.</li>
+      <li><span class="term">Lifelong learning and innovation</span> — e.g. an electrical engineer learning AI and IoT for smart grids.</li>
+    </ol>
+
+    <h3>Discipline vs profession — reproduce this table</h3>
+    <div class="tw"><table>
+      <tr><th>Aspect</th><th>As a discipline</th><th>As a profession</th></tr>
+      <tr><td>Focus &amp; practice</td><td>Generation of knowledge, theories, innovation and research</td><td>Practical application of knowledge to solve real-world problems</td></tr>
+      <tr><td>Setting</td><td>Academic institutions, research labs, universities</td><td>Industries, corporate sector, consultancy, government agencies</td></tr>
+      <tr><td>Output</td><td>Scientific theories, experimental results, conceptual designs</td><td>Functional products, infrastructure, processes, services</td></tr>
+      <tr><td>Goal</td><td>Advance the frontiers of science and technology</td><td>Ensure safety, efficiency and service to society</td></tr>
+    </table></div>
+    <p><em>Closing line worth memorising:</em> engineering is <strong>a discipline grounded in science and a profession rooted in service</strong> — it bridges theory and practice.</p>
+  </section>
+  <section class="sheet" id="s2">
+    <div class="sh-head">
+      <div><div class="sh-num">Sheet <b>02</b> · Module I · Lecture 2</div><h2 class="sh-title">The Practising Engineer</h2></div>
+      <button class="revise" data-for="s2" aria-pressed="false">Revised</button>
+    </div>
+
+    <div class="def"><span class="lab">Who is a practising engineer</span>
+      <p>Someone who <strong>applies engineering principles to solve real-world problems</strong> and is actively involved in the engineering profession. This may be a licensed <strong>Professional Engineer (PE)</strong> offering services to the public, or someone gaining experience <strong>under the supervision of a PE</strong>.</p>
+    </div>
+
+    <div class="two">
+      <div>
+        <h4>Key attributes</h4>
+        <ul>
+          <li><span class="term">Technical proficiency</span> — mastery of core principles</li>
+          <li><span class="term">Ethical integrity</span> — codes of ethics, professional conduct</li>
+          <li><span class="term">Problem-solving skills</span> — analytical and innovative mindset</li>
+          <li><span class="term">Communication skills</span> — effective oral and written</li>
+          <li><span class="term">Teamwork and collaboration</span> — multidisciplinary teams</li>
+          <li><span class="term">Adaptability and lifelong learning</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Additional attributes</h4>
+        <ul>
+          <li><span class="term">Project management skills</span> — planning, executing, leading</li>
+          <li><span class="term">Decision-making under constraints</span> — balancing cost, time, quality, safety</li>
+          <li><span class="term">Social and environmental responsibility</span> — sustainability and societal impact</li>
+          <li><span class="term">Leadership qualities</span> — influencing, guiding, mentoring</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Four core functions</h3>
+    <ol>
+      <li><span class="term">Design and development</span> — creating products, processes or systems</li>
+      <li><span class="term">Analysis and testing</span> — evaluating performance, ensuring quality</li>
+      <li><span class="term">Implementation and operation</span> — overseeing production and daily functions</li>
+      <li><span class="term">Maintenance and support</span> — ensuring long-term functionality</li>
+    </ol>
+
+    <h3>The engineer's three roles</h3>
+    <h4>1 · As a problem solver</h4>
+    <p>The engineer defines the objective and constraints, generates alternatives, analyses them and selects the workable solution — moving a problem from an ill-defined statement to a specified, buildable answer.</p>
+    <h4>2 · As a designer</h4>
+    <p>The <span class="term">engineering design process</span> is a series of steps engineers follow to find a solution to a problem: determining <strong>objectives and constraints</strong>, then <strong>prototyping, testing and evaluation</strong> — iterating until the design satisfies the need.</p>
+    <h4>3 · As a change agent</h4>
+    <p>A change agent <strong>identifies areas for improvement, initiates innovation, implements new solutions, and influences others toward positive transformation.</strong></p>
+
+    <div class="tw"><table>
+      <tr><th>Aspect of change</th><th>What the engineer does</th><th>Example</th></tr>
+      <tr><td>Technological transformation</td><td>Introduces new technologies</td><td>Shift from fossil fuels to solar and wind power</td></tr>
+      <tr><td>Solving societal challenges</td><td>Designs systems for global issues</td><td>Engineers Without Borders — low-cost water purification in rural areas</td></tr>
+      <tr><td>Sustainable development</td><td>Promotes eco-friendly design</td><td>Green buildings, biodegradable materials</td></tr>
+      <tr><td>Economic growth</td><td>Raises productivity through efficient systems</td><td>Automation revolutionising global supply chains</td></tr>
+      <tr><td>Digital innovation</td><td>Builds smart and AI-based systems</td><td>Health apps that monitor and predict disease</td></tr>
+      <tr><td>Disaster management</td><td>Designs early warning, rescue, rebuilding</td><td>Earthquake-resistant building redesign</td></tr>
+    </table></div>
+  </section>
+
+  <section class="sheet" id="s3">
+    <div class="sh-head">
+      <div><div class="sh-num">Sheet <b>03</b> · Module II · Lecture 3</div><h2 class="sh-title">Designing for Safety</h2></div>
+      <button class="revise" data-for="s3" aria-pressed="false">Revised</button>
+    </div>
+
+    <div class="def"><span class="lab">Definition — learn verbatim</span>
+      <p><strong>Safety</strong> is the condition of being protected from harm, danger or injury. In engineering it is the practice of designing systems, processes and products so as to <strong>minimise risk to human life, property and the environment</strong> during both normal operation and failure conditions.</p>
+      <p><strong>Design for Safety</strong> is the application of principles, criteria and techniques of engineering and management to <strong>optimise all aspects of security</strong> within the constraints of operational efficiency, time and cost, in <strong>all phases of the life cycle</strong> of a system. It is a planned, disciplined and systematic approach to prevent or reduce accidents throughout that life cycle.</p>
+    </div>
+
+    <p><strong>Historical note worth one mark:</strong> Design for Safety first gained importance in the <strong>1950s</strong>, driven by the <strong>United States Air Force</strong>, which concluded that designing aircraft by trial and error and continuous improvement would never be viable. From this came the <strong>MIL-STD-882</strong> standard, still in force today.</p>
+
+    <h3>Three basic principles</h3>
+    <ol>
+      <li><span class="term">Safety begins in the early stages</span> of design, development, testing and design review. Hazard identification processes must be established so hazards can be controlled by changing the design. <em>The sooner weaknesses are analysed, the easier, faster and cheaper the change is.</em></li>
+      <li><span class="term">Learn from the deficiencies of previous designs</span> to avoid their recurrence. Without applying lessons learned, a design never advances — it always starts from the same point.</li>
+      <li><span class="term">Safety requires engineering and management techniques</span> to control hazards. A safety programme must be planned and implemented so safety analyses are integrated with the other factors that impact management decisions.</li>
+    </ol>
+
+    <h3>Eight key considerations</h3>
+    <div class="tw"><table>
+      <tr><th>Consideration</th><th>What it means</th></tr>
+      <tr><td>Risk assessment</td><td>Identify hazards and evaluate possible dangers and their consequences</td></tr>
+      <tr><td>User training &amp; education</td><td>Clear, comprehensive material so the product is used properly</td></tr>
+      <tr><td>Ergonomics</td><td>Comfortable, efficient, user-friendly design; reduces musculoskeletal disorders</td></tr>
+      <tr><td>Redundancy &amp; fail-safes</td><td>Critical systems still function safely if the primary system fails</td></tr>
+      <tr><td>Accessibility</td><td>Usable by people of all abilities; compliance with accessibility standards</td></tr>
+      <tr><td>Material selection</td><td>Safe for user and environment; no harmful chemicals or fire threat</td></tr>
+      <tr><td>Human–machine interface</td><td>Intuitive, clear instructions, safeguards against user error</td></tr>
+      <tr><td>Product life-cycle</td><td>Safety across design, manufacturing, use <em>and</em> disposal</td></tr>
+    </table></div>
+
+    <h3>Three factors of safety in engineering</h3>
+    <h4>1 · Hardware safety</h4>
+    <ul>
+      <li><span class="term">Electrical protection</span> — avoid short circuits, overheating, fires (fuses, thermal cutoffs)</li>
+      <li><span class="term">EMI shielding</span> — prevent electromagnetic interference</li>
+      <li><span class="term">Safe power supply design</span> — stable voltage and isolation to avoid shocks</li>
+      <li><span class="term">Redundant components</span> — e.g. dual power supplies in servers</li>
+    </ul>
+    <h4>2 · Software safety</h4>
+    <ul>
+      <li><span class="term">Safe coding practices</span> — prevent buffer overflows, race conditions, memory leaks</li>
+      <li><span class="term">Exception handling</span> — handle sensor failure without dangerous results</li>
+      <li><span class="term">RTOS</span> — time-bound, predictable behaviour for medical devices, automotive ECUs</li>
+      <li><span class="term">Fail-safe defaults</span> — default to a safe state on error, e.g. stopping a robot arm</li>
+    </ul>
+    <h4>3 · Cyber-physical safety</h4>
+    <ul>
+      <li><span class="term">Secure communication</span> — prevent unauthorised control (hacked pacemakers, industrial PLCs)</li>
+      <li><span class="term">Sensor validation</span> — cross-verify inputs so bad data cannot drive unsafe action</li>
+      <li><span class="term">User interface design</span> — clear alerts, confirmation for critical actions</li>
+    </ul>
+
+    <h3>Three safety analysis tools — a near-certain question</h3>
+    <div class="tw"><table>
+      <tr><th>Tool</th><th>Direction</th><th>What it does</th></tr>
+      <tr><td><strong>FMEA</strong><br>Failure Mode and Effects Analysis</td><td>Bottom-up, inductive</td><td>Systematically identifies potential failures in a system, process or product and assesses their <strong>severity, likelihood and detectability</strong> — proactively addressing problems before they occur</td></tr>
+      <tr><td><strong>FTA</strong><br>Fault Tree Analysis</td><td>Top-down, deductive</td><td>Starts from an undesired <strong>top event</strong> and maps its contributing causes using a diagram of events and <strong>logic gates</strong>, identifying root causes</td></tr>
+      <tr><td><strong>HAZOP</strong><br>Hazard and Operability Study</td><td>Structured, systematic</td><td>Identifies hazards <em>and operational problems</em> in a complex system, typically a process facility — heavily used in chemical processing</td></tr>
+    </table></div>
+    <p><strong>Memory hook:</strong> FMEA asks "if this part fails, what happens?" (cause → effect). FTA asks "this disaster happened — what could have caused it?" (effect → cause). HAZOP asks "what if this process deviates from design intent?"</p>
+  </section>
+  <section class="sheet" id="s4">
+    <div class="sh-head">
+      <div><div class="sh-num">Sheet <b>04</b> · Module II · Lecture 4</div><h2 class="sh-title">Designing for Reliability</h2></div>
+      <button class="revise" data-for="s4" aria-pressed="false">Revised</button>
+    </div>
+
+    <div class="def"><span class="lab">Definition — learn verbatim</span>
+      <p><strong>Reliability</strong> is the <strong>probability</strong> that a product, system or service will perform its intended function <strong>adequately</strong> for a <strong>specified period of time</strong>, or will operate in a <strong>defined environment without failure</strong>.</p>
+    </div>
+    <p>Note the four examinable ingredients in that sentence: it is a <em>probability</em>, tied to an <em>intended function</em>, over a <em>stated time</em>, under <em>stated conditions</em>. Dropping any one of them loses marks.</p>
+
+    <h3>Why design for reliability</h3>
+    <ul>
+      <li>Enhances customer satisfaction</li>
+      <li>Reduces warranty costs</li>
+      <li>Improves brand reputation</li>
+      <li>Reduces total life-cycle cost</li>
+      <li>Ensures safety and compliance</li>
+    </ul>
+
+    <h3>Reliability across the product life cycle</h3>
+    <div class="tw"><table>
+      <tr><th>Phase</th><th>Reliability activity</th></tr>
+      <tr><td>Concept</td><td>Requirements specification</td></tr>
+      <tr><td>Design</td><td>FMEA, fault-tolerant design</td></tr>
+      <tr><td>Manufacturing</td><td>Process capability, quality control</td></tr>
+      <tr><td>Operation</td><td>Maintenance strategy, failure analysis</td></tr>
+    </table></div>
+
+    <h3>Six design techniques for reliability</h3>
+    <ol>
+      <li><span class="term">Redundancy</span> — duplication of critical components or functions so the system continues operating if one part fails.</li>
+      <li><span class="term">Derating</span> — operating electrical and electronic devices at <strong>less than their maximum rated capacity</strong> to improve reliability and lifespan.</li>
+      <li><span class="term">Environmental protection</span> — e.g. conformal coating against moisture.</li>
+      <li><span class="term">Stress–strength analysis</span> — assessing probability of failure by comparing <strong>applied stress</strong> to <strong>inherent strength</strong>.</li>
+      <li><span class="term">Modular design</span> — subdividing a system into smaller, independent, interchangeable modules, each performing a specific function.</li>
+      <li><span class="term">Robust design (Taguchi methods)</span> — creating products that perform consistently well <strong>despite variation</strong> in manufacturing, usage or environment.</li>
+    </ol>
+
+    <h3>Quality vs reliability — reproduce this table</h3>
+    <div class="tw"><table>
+      <tr><th>Aspect</th><th>Quality</th><th>Reliability</th></tr>
+      <tr><td>Timeframe</td><td>At the time of purchase / use</td><td>Over a period of time</td></tr>
+      <tr><td>Measure</td><td>Meets specifications and expectations</td><td>Performs consistently without failure</td></tr>
+      <tr><td>Example</td><td>A sharp new LED TV with vibrant colours</td><td>A washing machine that works well for 10 years</td></tr>
+      <tr><td>Focus</td><td>Initial features and performance</td><td>Long-term dependability</td></tr>
+    </table></div>
+    <p><strong>One-line answer:</strong> quality is how a product performs <em>initially</em>; reliability is how it <em>continues</em> to perform over time. Reliability is quality extended over time.</p>
+
+    <h3>Four reliability tests</h3>
+    <ul>
+      <li><span class="term">ALT</span> — Accelerated Life Testing</li>
+      <li><span class="term">HALT</span> — Highly Accelerated Life Testing</li>
+      <li><span class="term">Burn-in testing</span> — weeds out infant-mortality failures before shipping</li>
+      <li><span class="term">ESS</span> — Environmental Stress Screening</li>
+    </ul>
+
+    <h3>Two case studies the deck uses</h3>
+    <div class="wk">
+      <div class="wk-h">Case · Automotive ECU design</div>
+      <div class="wk-b">
+        <p>High-vibration environment. Conformal coating for moisture resistance; redundant power supplies for fail-safe operation; <strong>MTBF target 100,000 hours</strong>. FMEA revealed <strong>thermal stress</strong> as the major issue → improved heat sinks.</p>
+      </div>
+    </div>
+    <div class="wk">
+      <div class="wk-h">Case · Smartphone battery reliability</div>
+      <div class="wk-b">
+        <p>Frequent customer complaints of overheating. Root cause: <strong>charging circuit component failure</strong>. Solution: improved thermal pad placement plus component <strong>derating</strong>. Outcome: <strong>MTBF improved by 45%</strong>.</p>
+      </div>
+    </div>
+
+    <p><strong>The line the deck closes on, and a perfect concluding sentence:</strong> <em>"Reliability is designed, not tested in."</em> Tools like FMEA and FTA identify and mitigate failure risks; robust design ensures long-term performance and customer trust.</p>
+  </section>
+
+  <section class="sheet" id="s5">
+    <div class="sh-head">
+      <div><div class="sh-num">Sheet <b>05</b> · Module II · Numerical</div><h2 class="sh-title">Reliability Mathematics</h2></div>
+      <button class="revise" data-for="s5" aria-pressed="false">Revised</button>
+    </div>
+
+    <div class="flag"><b>Reconstructed content</b>Slides 15–19 of the reliability deck are titled "Reliability Calculation" but are <strong>images</strong>, so no text could be extracted from them. This sheet rebuilds the standard treatment those slides almost certainly carry. Check the worked forms against your class notes before relying on the exact style your examiner wants.</div>
+
+    <h3>The four core quantities</h3>
+    <div class="fxgrid">
+      <div class="fx">λ  =  number of failures / total operating time<span class="why">Failure rate. Units: failures per hour. Constant during useful life.</span></div>
+      <div class="fx">R(t)  =  e<sup>−λt</sup><span class="why">Reliability function for a constant failure rate (exponential distribution). Probability of surviving to time t.</span></div>
+      <div class="fx">F(t)  =  1 − R(t)  =  1 − e<sup>−λt</sup><span class="why">Unreliability — probability that failure occurs by time t.</span></div>
+      <div class="fx">MTBF  =  1 / λ        MTTF  =  1 / λ<span class="why">MTBF for <strong>repairable</strong> items (mean time <em>between</em> failures); MTTF for <strong>non-repairable</strong> items (mean time <em>to</em> failure). Distinguishing these two is a classic one-mark trap.</span></div>
+      <div class="fx">Availability  A  =  MTBF / (MTBF + MTTR)<span class="why">MTTR = mean time to repair. Availability is the fraction of time the system is up.</span></div>
+    </div>
+
+    <h3>The bathtub curve</h3>
+    <figure>
+      <svg viewBox="0 0 330 168" role="img" aria-label="Bathtub curve: failure rate high and decreasing during infant mortality, constant during useful life, rising during wear-out">
+        <line x1="40" y1="124" x2="312" y2="124" stroke="var(--rule)" stroke-width="1"/>
+        <line x1="40" y1="124" x2="40" y2="22" stroke="var(--rule)" stroke-width="1"/>
+        <line x1="112" y1="30" x2="112" y2="124" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3"/>
+        <line x1="218" y1="30" x2="218" y2="124" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3"/>
+        <path d="M46,32 C68,84 90,98 112,98 L218,98 C246,98 274,62 300,28" fill="none" stroke="var(--signal)" stroke-width="2.2" stroke-linecap="round"/>
+        <text class="svg-lbl-b" x="76" y="118" text-anchor="middle">I</text>
+        <text class="svg-lbl-b" x="165" y="118" text-anchor="middle">II</text>
+        <text class="svg-lbl-b" x="259" y="118" text-anchor="middle">III</text>
+        <text class="svg-lbl" x="76" y="140" text-anchor="middle">Infant</text>
+        <text class="svg-lbl" x="76" y="150" text-anchor="middle">mortality</text>
+        <text class="svg-lbl" x="165" y="140" text-anchor="middle">Useful life</text>
+        <text class="svg-lbl" x="165" y="150" text-anchor="middle">λ constant</text>
+        <text class="svg-lbl" x="259" y="140" text-anchor="middle">Wear-out</text>
+        <text class="svg-lbl" x="330" y="124" text-anchor="end">Time t</text>
+        <text class="svg-lbl" x="40" y="16" text-anchor="middle">λ(t)</text>
+        <text class="svg-lbl" x="76" y="50" text-anchor="middle">decreasing</text>
+        <text class="svg-lbl" x="259" y="50" text-anchor="middle">increasing</text>
+      </svg>
+      <figcaption>I — early failures from manufacturing defects; removed by <strong>burn-in testing</strong>. II — random failures at constant λ; this is the region where R(t)=e^−λt and MTBF=1/λ apply. III — failures from ageing, fatigue and wear; addressed by <strong>preventive replacement</strong>.</figcaption>
+    </figure>
+
+    <h3>System reliability — series and parallel</h3>
+    <figure>
+      <svg viewBox="0 0 330 150" role="img" aria-label="Block diagrams of components in series and in parallel">
+        <text class="svg-lbl-b" x="4" y="16">SERIES — all must work</text>
+        <line x1="6" y1="40" x2="34" y2="40" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <rect x="34" y="26" width="62" height="28" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="1.2"/>
+        <text class="svg-lbl-b" x="65" y="44" text-anchor="middle">R₁</text>
+        <line x1="96" y1="40" x2="126" y2="40" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <rect x="126" y="26" width="62" height="28" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="1.2"/>
+        <text class="svg-lbl-b" x="157" y="44" text-anchor="middle">R₂</text>
+        <line x1="188" y1="40" x2="218" y2="40" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <rect x="218" y="26" width="62" height="28" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="1.2"/>
+        <text class="svg-lbl-b" x="249" y="44" text-anchor="middle">R₃</text>
+        <line x1="280" y1="40" x2="310" y2="40" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <text class="svg-lbl" x="4" y="68">Rs = R₁ × R₂ × R₃    (always lower than the weakest link)</text>
+
+        <text class="svg-lbl-b" x="4" y="96">PARALLEL — any one suffices (redundancy)</text>
+        <line x1="6" y1="126" x2="40" y2="126" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <line x1="40" y1="110" x2="40" y2="142" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <rect x="40" y="103" width="76" height="24" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+        <text class="svg-lbl-b" x="78" y="119" text-anchor="middle">R₁</text>
+        <rect x="40" y="131" width="76" height="24" fill="var(--good-soft)" stroke="var(--good)" stroke-width="1.2"/>
+        <text class="svg-lbl-b" x="78" y="147" text-anchor="middle">R₂</text>
+        <line x1="116" y1="115" x2="140" y2="115" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <line x1="116" y1="143" x2="140" y2="143" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <line x1="140" y1="110" x2="140" y2="148" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <line x1="140" y1="126" x2="176" y2="126" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <text class="svg-lbl" x="186" y="123">Rp = 1 − (1−R₁)(1−R₂)</text>
+        <text class="svg-lbl" x="186" y="135">(always higher than the best branch)</text>
+      </svg>
+      <figcaption>Adding components <strong>in series lowers</strong> reliability; adding them <strong>in parallel raises</strong> it. This is the mathematical justification for the redundancy technique on sheet 04.</figcaption>
+    </figure>
+
+    <div class="fxgrid">
+      <div class="fx">Series:    R<sub>s</sub> = R₁ · R₂ · … · R<sub>n</sub>        λ<sub>s</sub> = λ₁ + λ₂ + … + λ<sub>n</sub></div>
+      <div class="fx">Parallel:  R<sub>p</sub> = 1 − (1−R₁)(1−R₂) … (1−R<sub>n</sub>)</div>
+    </div>
+
+    <h3>Worked numericals</h3>
+    <div class="wk">
+      <div class="wk-h">W1 · Exponential reliability and MTBF</div>
+      <div class="wk-b">
+        <p>A component has a constant failure rate λ = 2 × 10⁻⁴ failures/hour. Find its reliability for a 1,000-hour mission, and its MTBF.</p>
+        <span class="step">R(1000) = e^(−2×10⁻⁴ × 1000) = e^(−0.2)</span>
+        <span class="step">          = 0.8187</span>
+        <span class="step">MTBF = 1/λ = 1/(2×10⁻⁴) = 5,000 hours</span>
+        <p><span class="ans">R = 81.87%,  MTBF = 5,000 h</span></p>
+      </div>
+    </div>
+    <div class="wk">
+      <div class="wk-h">W2 · Series system</div>
+      <div class="wk-b">
+        <p>Three components with reliabilities 0.95, 0.92 and 0.98 are connected in series. Find system reliability.</p>
+        <span class="step">Rs = 0.95 × 0.92 × 0.98 = 0.8565</span>
+        <p><span class="ans">Rs = 85.65%</span> — note it is <em>below</em> the worst component (0.92).</p>
+      </div>
+    </div>
+    <div class="wk">
+      <div class="wk-h">W3 · Parallel redundancy</div>
+      <div class="wk-b">
+        <p>Two identical units, each of reliability 0.90, are placed in parallel. Find system reliability.</p>
+        <span class="step">Rp = 1 − (1−0.90)(1−0.90) = 1 − (0.10)(0.10) = 1 − 0.01</span>
+        <p><span class="ans">Rp = 0.99 = 99%</span> — one redundant unit turns 90% into 99%.</p>
+      </div>
+    </div>
+    <div class="wk">
+      <div class="wk-h">W4 · Series–parallel combination</div>
+      <div class="wk-b">
+        <p>A unit of reliability 0.90 is in series with a parallel pair each of reliability 0.80. Find system reliability.</p>
+        <span class="step">Parallel pair:  Rp = 1 − (0.2)(0.2) = 0.96</span>
+        <span class="step">Whole system:   Rs = 0.90 × 0.96 = 0.864</span>
+        <p><span class="ans">R = 86.4%</span> — always collapse parallel blocks first, then multiply along the series.</p>
+      </div>
+    </div>
+    <div class="wk">
+      <div class="wk-h">W5 · MTBF from test data, and availability</div>
+      <div class="wk-b">
+        <p>Ten units are tested for 500 hours each; 4 failures occur. Repairs average 50 hours. Find λ, MTBF and availability.</p>
+        <span class="step">Total operating time = 10 × 500 = 5,000 unit-hours</span>
+        <span class="step">MTBF = 5,000 / 4 = 1,250 hours</span>
+        <span class="step">λ = 1/1250 = 8 × 10⁻⁴ failures/hour</span>
+        <span class="step">A = MTBF/(MTBF+MTTR) = 1250/(1250+50) = 1250/1300</span>
+        <p><span class="ans">MTBF = 1,250 h,  A = 96.15%</span></p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,175 @@
+
+==============================================================================
+FILE: Lecture 8 Project Mnagement.ppt
+==============================================================================
+
+--- notes 1 ---
+  Click to edit Master text styles
+  Second level
+  Third level
+  Fourth level
+  Fifth level
+  *
+
+--- slide 2 ---
+# Project Management
+
+--- slide 3 ---
+  What is Project Management?
+  Project : A group of milestones or phases, activities or tasks that support an effort to accomplish something
+  
+  Management : is the process of Planning, Organizing, Controlling and Measuring
+
+--- slide 4 ---
+# Project...
+  A collection of linked activities, carried out in an organised manner,with a clearly defined START POINT and END POINT to achieve some specific results desired to satisfy the needs of the organisation at the current time
+
+--- slide 5 ---
+# Project Management
+  A dynamic process that utilises the appropriate resources of the organisation in a controlled and structured manner, to achieve some clearly defined objectives identified as needs.
+  It is always conducted within a defined set of constraints
+
+--- slide 6 ---
+# Importance in Engineering:
+  Ensures timely delivery of software/hardware projects.
+  Balances scope, cost, and time (the triple constraint).
+  Enhances teamwork, communication, and risk control.
+
+--- slide 7 ---
+# Characteristics of a Project
+  Temporary with a defined start and end.
+  Unique deliverables (software product, system, research prototype, etc.).
+  Progressive elaboration (detailed planning evolves with project progress).
+  Involves multiple stakeholders.
+
+--- slide 8 ---
+# What does Project Management Entail?
+  Planning:	is the most critical and gets the 				least amount of our time
+  	Beginning with the End in mind-Stephen Covey
+  Organizing: 	Orderly fashion 							(Contingent/Prerequisites)
+  Controlling:	is critical if we are to use our 				limited resources wisely
+  Measuring:	To determine if we accomplished 				the goal or met the target?
+
+--- slide 9 ---
+# Measuring…….
+  Are we efficient?
+  Are we productive?
+  Are we doing a good job?
+  What is the outcome?
+  Is it what we wanted to be?
+  	If you can’t plan it, You can’t do it
+  	If you can’t measure it, you can’t manage it
+
+--- notes 10 ---
+  *
+
+--- slide 11 ---
+  *
+# The Triple Constraint of Project Management
+
+--- slide 12 ---
+# PROJECT LIFE CYCLE
+
+--- slide 13 ---
+  Initiation – Define goals, feasibility, and stakeholders.
+  Planning – Develop project scope, WBS (Work Breakdown Structure), schedule, cost estimation, and risk management.
+  Execution – Carry out planned tasks, allocate resources, ensure team collaboration.
+  Monitoring & Controlling – Track performance using KPIs, manage risks, adjust plans.
+  Closure – Deliver final product, evaluate performance, document lessons learned.
+
+--- slide 14 ---
+# Who uses Project Management?
+  Nearly Everyone to some degree
+  	People plan their Days, their Weeks, their Vacations and their Budgets and keep a simple project management form known as ‘’To Do’’ list
+  Any Process or Means used to track tasks or efforts towards accomplishing a goal could be considered Project Management
+
+--- slide 15 ---
+# Why is Project Management used?
+  It is necessary to Track or Measure the progress we have achieved towards a Goal we wish to accomplish
+  We use Project Management to Aid us in Maximizing and Optimizing our resources to accomplish our goals
+
+--- slide 16 ---
+# How much time does Project Management take?
+  Not much. Probably more time is wasted as a consequence of lack of Project Management tool than is spent to Plan adequately, Organize, Control effectively and Measure appropriately
+  How long: As long as there are things to do
+
+--- slide 17 ---
+# Why is Project Management Important?
+  Enables us to map out a course of action or work plan
+  Helps us to think  systematically and thoroughly
+  Unique Task
+  Specific Objective
+  Variety of Resources
+  Time bound
+
+--- slide 18 ---
+# Project Management Processes (PMBOK Guide)
+  Integration Management – Ensures coordination of all processes.
+  Scope Management – Defines boundaries of work.
+  Time Management – Scheduling (Gantt charts, CPM, PERT).
+  Cost Management – Budgeting and resource allocation.
+  Quality Management – Ensures product meets standards (ISO, CMMI).
+  Human Resource Management – Team roles, leadership, motivation.
+  Communication Management – Stakeholder reporting, progress updates.
+  Risk Management – Identify, analyze, mitigate risks.
+  Procurement Management – Handling contracts and external vendors.
+
+--- slide 19 ---
+# Project Management Tools & Techniques
+  Traditional Tools:
+  Gantt Chart, CPM (Critical Path Method), PERT (Program Evaluation Review Technique).
+  Agile & Modern Approaches:
+  Scrum, Kanban, Extreme Programming (XP).
+  JIRA, Trello, MS Project for tracking.
+  Software Engineering Specific:
+  Version control (Git), CI/CD pipelines, automated testing.
+
+--- slide 20 ---
+# Advantages
+  In built Monitoring/ Sequencing
+  Easy and Early identification of Bottlenecks
+  Activity based costing
+  Identification and Addition of missing and new activities
+  Preempting unnecessary activity/expenditure
+  Timely Completion
+  Assigning tasks
+  Reporting
+
+--- slide 21 ---
+# Road to Better Project Management
+  Find a Project plan that fits your style of project management needs
+  It may be as simple as creating templates, forms and spreadsheets to track tasks
+  Formation of a Project Management committee
+  Listing out all the tasks and sub-tasks to accomplish a goal
+  Jot down the time period and person responsible against each task/sub-task
+
+--- slide 22 ---
+  Identify a Project Manager
+  Identify Task Managers
+  Sequence the activities in relation to time period
+  Present to the PMC
+  Finalize by reaching an agreement and start work…...
+# Road to Better Project Management
+
+--- slide 23 ---
+# Implementation
+  Regular Monitoring
+  Resource Support
+  Critical issues discussed and solution
+  Meeting with the team on completion of each major milestone
+  Track the progress against the plan
+  System to add/delete tasks in the PMT
+
+--- slide 24 ---
+# Consequences of 
+  not using PMT
+  DELAY
+  COST
+  WASTE OF RESOURCES
+  QUALITY
+  DISSATISFACTION
+  REPUTATION
+
+--- slide 25 ---
+# Project Management….
+  Work Smart Not Hard !!!

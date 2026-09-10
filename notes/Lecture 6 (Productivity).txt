@@ -1,0 +1,108 @@
+
+==============================================================================
+FILE: Lecture 6 (Productivity).pptx
+==============================================================================
+
+--- Slide 1 ---
+# Production and Productivity
+
+--- Slide 2 ---
+# Production and Productivity
+# Production is concerned with the activity of producing goods and/or services.
+  In quantitative terms, it is the quantity of output produced.
+  Productivity is concerned with the efficient utilization of resources (inputs) producing goods and/or services (output).
+  In quantitative terms, it is the ratio of the output produced to input(s) used.
+  Productivity = output produced/input used
+
+--- Slide 3 ---
+# Example: 1
+  A company manufacturing electronic calculators produced 10,000 calculators employing 50 persons working at 8 hours/day for 25 days. What are the values of production and productivity during this period?
+  Production = 10,000 calculators
+  Productivity =  calculator/person-hour
+  Check that suppose the company used 10 additional persons and produced 20 % more calculators, production went up, but not productivity.
+
+--- Slide 4 ---
+# Efficiency and Effectiveness
+# Efficiency is the ratio of actual output achieved to standard output expected.
+  Efficiency= actual output achieved / standard output expected
+  That is, efficiency is concerned with how well the inputs are utilized.
+  Effectiveness is the degree of accomplishment of objectives.
+  That is, effectiveness is concerned with how well the outputs accomplish their
+  intended goals.
+
+--- Slide 5 ---
+# Example:
+  An operator produced 120 pieces per hour, the standard rate being 180 pieces per hour.  What is the operator efficiency?
+  Operator Efficiency = .
+  (Suppose that 60 % of the produced pieces fail to accomplish their intended functions and could not be sold, and 20 % of the sold pieces malfunctioned within one month of sale.  The customer satisfaction and quality image of the company fell by 50 %)
+  The operation has a low effectiveness. Both qualitative and quantitative measures are used to signify effectiveness.
+
+--- Slide 6 ---
+# Partial, Total-Factor, and Total Productivity
+# Partial productivity is the ratio of output to one class of inputs.
+  Examples: Labour productivity, material productivity, Capital productivity
+  Total-Factor Productivity is the ratio of net output to the sum of the associated labour and capital inputs.
+  Net output = Total output – Intermediate goods and services purchased
+  Total Productivity is the ratio of total output to the sum of all inputs.
+  Total Productivity=Total output/sum of all inputs
+
+--- Slide 7 ---
+# Real (Monetary) Values of Goods and Services
+# When inputs and outputs are measured in monetary units, these values must be deflated to the base year by dividing them by the price index figures to find their real monetary values.
+
+--- Slide 8 ---
+# Example: 2
+  A company bought 10 pieces of MS plate in 2022 by paying Rs.121,000, used 5 of these pieces in 2024 to produce goods, some of which were sold in the same year for Rs.100,000 and the remaining goods Rs.100,000 in the next year.  Labour cost to produce these goods was Rs.20,000.  Energy and other costs apportioned to the produced goods equal Rs.12,000.  Find the productivity.
+  2020 is the base year.  Price index figures for next 5 years are 105, 110, 115, 120, and 125.
+  Real cost of materials used (incurred in 2022) =  Rs.
+  Real cost of labour, energy and other costs (incurred in 2024) = Rs.
+  Sales Revenue (realized in 2024) =  Rs.
+  Productivity = .
+  This figure should be compared with productivity figure in the base year.
+
+--- Slide 9 ---
+# Example: Consider the following real monetary values w. r. t. a base year for a company:
+  Output = Rs.1000.	Labour Input = Rs.300.	Material input = Rs.200
+  Capital input = Rs.300. Energy input = Rs.100.	Other expense input = Rs.50
+  Labour Productivity =
+  Capital Productivity =
+  ;
+  Total Factor Productivity =
+  (Assuming material and other services are bought, and machines are on leas.)
+  Total Productivity =
+
+--- Slide 10 ---
+# Example
+  A machine produces 100 parts per hour with one operator.  Suppose this machine is replaced by another machine with which the operator is able to produce 120 parts.
+  Past and new labour productivity = 100 and 120 parts/person-hour (a rise of 20 %).
+  Suppose operating costs of old and new machines are Rs. 40 and Rs. 60 per person-hour,
+  and wage rate is Rs.5/person-hour.
+  Old		    New				Productivity Index
+  Labour productivity:	100/5 = 20	    120/5 = 24 parts/rupee	24/20 = 1.2
+  Machine productivity:	100/40 =2.5 	    120/60 = 2 parts/rupee	2/2.5  = 0.8
+  Combined L & M Prod: 100/(45) = 2.22 120/(65) = 1.85		1.85/2.22 = 0.83
+
+--- Slide 11 ---
+# Productivity of a Multi-Product Company
+# Suppose a company produces n products.  Suppose we know the output,  labour, material, energy, capital, and other expenses for each product i = 1, . . ., n.
+  Then one can compute
+  Productivities at each product level and
+  Total productivity at the company level =
+
+--- Slide 12 ---
+# Service Productivity
+# It is seldom possible to define “one unit of a service.”
+  Productivity measurements in services are normally only partial measurements:
+  - How many customers are served by a restaurant waiter in a day
+  - How many phone calls are dispatched by a call center employee.
+  Reducing input improves input efficiency, but can reduce quality, hence output, and hence productivity.
+  Banks offer ATM services and insurance companies offer call centre services.  QoS has not deteriorated.  Hence these are effective schemes.
+
+--- Slide 13 ---
+# Service productivity Measures
+  Service Productivity
+  For global productivity of operations of a service provider
+  Service Productivity
+
+--- Slide 14 ---
+# THANK YOU!

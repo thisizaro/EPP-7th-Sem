@@ -1,0 +1,235 @@
+
+==============================================================================
+FILE: LECTURE 5 (Quality).ppt
+==============================================================================
+
+--- notes 1 ---
+  *
+  Edit Master text styles
+  Second level
+  Third level
+  Fourth level
+  Fifth level
+  *
+
+--- slide 2 ---
+# Quality and Productivity Management
+
+--- slide 3 ---
+# Introduction
+  In engineering, the concepts of quality and productivity are inseparable from the goals of effective design, manufacturing, and service delivery. 
+  In today’s competitive global economy, customers expect not only excellent product performance but also timely delivery and reasonable pricing. 
+  To meet these expectations, organizations must focus on both producing high-quality outputs and doing so efficiently—this is the domain of quality and productivity management.
+  Quality ensures that the product or service is fit for use, while productivity ensures that it is delivered efficiently, using the least possible resources without compromising standards. A systematic approach to managing both leads to organizational excellence and long-term sustainability.
+
+--- slide 4 ---
+# WHAT IS QUALITY ?
+  Crossby’s Quality Definition
+  Quality is conformance to        requirements or specifications.
+  Quality is “fitness for use”.
+
+--- slide 5 ---
+# Garvin’s Quality Definition
+  Five major approaches to the definition of quality can be identified as:
+  
+  Transcendent approach of philosophy
+  Product-based approach of economics
+  Manufacturing-based
+  User-based approach 
+  Value-based approach
+
+--- slide 6 ---
+# Transcendent Definition
+  Quality cannot be defined…
+  
+  It is not clear what it is, but it is something good...
+  
+  It refers to exploring concepts or realities that lie beyond the limits of ordinary human experience and understanding. 
+  
+  It often involves investigating the nature of reality, consciousness.
+
+--- slide 7 ---
+# Product-based Definition
+  Differences in quality amount to differences in the quality of some desired ingredient or attribute.
+  
+   The product has something that adds value that other similar products do not.
+  
+  It establishes economic transfer functions that convert changes in any variable development cost, cycle time, product value, risk into their impact on life-cycle profitability.
+
+--- slide 8 ---
+# Manufacturing-Based Definition
+  Quality means conformance to requirements.
+  Quality is the degree to which a specific product conforms to a design or specification.  
+  
+  Conforming to design, specifications, or requirements. Having no defects.
+
+--- slide 9 ---
+# User-based Definition
+  Quality Consists of the capacity to satisfy wants.
+  Quality is the degree to which a specific product satisfies the wants of a specific consumer.
+  In the final analysis of the marketplace, the quality of a product depends on how well it fits patterns of consumer preferences.
+  Quality consists of the extent to which a specimen possesses the service characteristics you desire.
+  Quality is fitness for use.
+  Quality is intimately linked to customer satisfaction.
+  
+  
+  Fitness for use, meeting customer expectations.
+
+--- slide 10 ---
+# Value-Based Definition
+  Quality is the degree of excellence at an acceptable price and the control of variability at an acceptable cost.    
+  Quality means best for certain customer conditions. These conditions are (a) the actual use and (b) the selling price of the product.
+  	
+  	The product is the best combination of price and features.
+
+--- slide 11 ---
+# Quality in Engineering
+  Quality can be defined as the ability of a product, process, or service to consistently meet or exceed customer requirements and expectations. In engineering, quality is multifaceted and includes aspects such as durability, performance, reliability, safety, and aesthetic value.
+  
+  Dimensions of Product Quality (as identified by David A. Garvin): 
+  1. Performance – Primary operating characteristics. 
+  2. Features – Supplementary elements that enhance appeal. 
+  3. Reliability – Probability of failure-free performance. 
+  4. Conformance – Degree to which product design meets specifications. 
+  5. Durability – Product life span before replacement. 
+  6. Serviceability – Ease and cost of repair or servicing. 
+  7. Aesthetics – Sensory characteristics. 
+  8. Perceived Quality – Image and brand influence.
+
+--- slide 12 ---
+  1. Performance
+  Definition: The primary operating characteristics of a product.
+  Example: A car’s acceleration, fuel efficiency, or top speed.
+  2. Features
+  Definition: Additional characteristics or secondary functions that enhance appeal or usability.
+  Example: Bluetooth, GPS, or heated seats in a car.
+  3. Reliability
+  Definition: The likelihood that a product will function without failure for a given period.
+  Example: A computer that runs smoothly without crashing for years.
+  4. Conformance
+  Definition: The degree to which the product meets design and operating specifications.
+  Example: Manufactured gears having exact tolerances as per the design.
+
+--- slide 13 ---
+  5. Durability
+  Definition: The amount of use a product can sustain before it deteriorates or fails.
+  Example: The lifespan of a smartphone battery or an aircraft engine.
+  6. Serviceability
+  Definition: How easy it is to maintain, repair, or upgrade the product.
+  Example: A modular laptop where parts can be easily replaced.
+  7. Aesthetics
+  Definition: The look, feel, sound, taste, or smell of the product — subjective to users.
+  Example: The sleek design and feel of a premium smartphone.
+  8. Perceived Quality
+  Definition: The customer’s perception of quality based on brand image, reputation, or prior experience.
+  Example: Apple products are often seen as high-quality due to branding and past performance.
+
+--- slide 14 ---
+# SIX SIGMA APPROACH
+  Initiated by Motorola in 1987, Six Sigma is a business strategy for process improvement and corporate growth (Antony 2004) that provides a disciplined and structured approach of using both statistical and non-statistical tools and techniques within its improvement and design methodologies.  
+  
+  The Six Sigma approach is a data-driven methodology aimed at improving business processes by eliminating defects and minimizing variability. It is widely used in manufacturing, service industries, healthcare, and other sectors to enhance quality and efficiency.
+
+--- slide 15 ---
+# Key Objectives of Six Sigma
+  Reduce defects (errors or inconsistencies)
+  Improve process capability and performance
+  Enhance customer satisfaction
+  Lower operational costs
+
+--- slide 16 ---
+# Core Principles of Six Sigma
+  Principle
+  Description
+  Customer focus
+  Delivering what the customer values most.
+  Data-driven decision making
+  Using statistical tools and data analysis for decisions.
+  Process focus
+  Improving and controlling business processes.
+  Proactive management
+  Preventing issues instead of reacting to them.
+  Collaboration
+  Teamwork and cross-functional engagement.
+  Continuous improvement
+  Ongoing effort to improve performance.
+
+--- slide 17 ---
+# DMAIC Methodology 
+  (for improving existing processes)
+  Step
+  Description
+  D – Define
+  Identify the problem, goals, and customer requirements.
+  M – Measure
+  Collect data to understand current performance.
+  A – Analyse
+  Identify root causes of defects or variations.
+  I – Improve
+  Implement and test solutions to eliminate root causes.
+  C – Control
+  Monitor the improved process to sustain gains.
+
+--- slide 18 ---
+# DMADV Methodology 
+  (for creating new processes/products)
+  Step
+  Description
+  D – Define
+  Project goals and customer needs.
+  M – Measure
+  Determine customer needs and specifications.
+  A – Analyze
+  Design alternatives and evaluate options.
+  D – Design
+  Develop detailed design and verify.
+  V – Verify
+  Validate design through pilot testing and feedback.
+
+--- slide 19 ---
+# Key Six Sigma Tools
+  A large number of six sigma tools are in use.  The popular ones are the following:
+  Quality Function Deployment
+  Process Map
+  Seven Basic Tools of Quality 
+  Measurement System Analysis
+  Multi-vari Study
+  Capability Study
+  Control Charts
+  Failure Mode and Effects Analysis
+  Design of Experiments
+  Control Plan
+
+--- slide 20 ---
+# Seven Basic Quality Tools
+  Tool No.
+  Tool Name
+  Purpose
+  1
+  Cause-and-Effect Diagram 
+  (Ishikawa or Fishbone Diagram)
+  Identifies root causes of a problem.
+  2
+  Check Sheet
+  Collects and organizes data in real-time.
+  3
+  Control Chart
+  Monitors process variation over time.
+  4
+  Histogram
+  Shows frequency distribution of data.
+  5
+  Pareto Chart
+  Identifies and prioritizes major causes (80/20 rule).
+  6
+  Scatter Diagram
+  Displays correlation between two variables.
+  7
+  Flowchart (Process Diagram)
+  Visualizes the steps in a process.
+
+--- slide 21 ---
+  Thank you!
+
+--- notes 22 ---
+  *

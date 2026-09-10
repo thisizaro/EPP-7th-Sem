@@ -1,0 +1,156 @@
+
+==============================================================================
+FILE: LECTURE 4_Reliability.pptx
+==============================================================================
+
+--- Slide 1 ---
+# Design for Reliability
+# Ensuring Product Performance
+  Over Time
+
+--- Slide 2 ---
+
+--- Slide 3 ---
+
+--- Slide 4 ---
+
+--- Slide 5 ---
+# Reliability is defined as the probability that a product, system, or service will perform its intended function adequately for a specified period of time, or will operate in a defined environment without failure
+
+--- Slide 6 ---
+# Why Design for Reliability?
+# Enhances customer satisfaction
+  Reduces warranty costs
+  Improves brand reputation
+  Reduces total lifecycle cost
+  Ensures safety and compliance
+
+--- Slide 7 ---
+# Reliability in Product Life Cycle
+# Concept Phase: Requirements specification
+  Design Phase: FMEA, fault-tolerant design
+  Manufacturing: Process capability, quality control
+  Operation: Maintenance strategy, failure analysis
+
+--- Slide 8 ---
+
+--- Slide 9 ---
+
+--- Slide 10 ---
+
+--- Slide 11 ---
+
+--- Slide 12 ---
+
+--- Slide 13 ---
+
+--- Slide 14 ---
+
+--- Slide 15 ---
+# Reliability Calculation
+
+--- Slide 16 ---
+# Reliability Calculation
+
+--- Slide 17 ---
+# Reliability Calculation
+
+--- Slide 18 ---
+# Reliability Calculation
+
+--- Slide 19 ---
+# Reliability Calculation
+
+--- Slide 20 ---
+# What is Reliability?
+# Definition: The probability that a product or system performs its intended function without failure for a specified period under stated conditions.
+  Focus: Long-term performance & failure prevention
+
+--- Slide 21 ---
+# Reliability is defined as the probability that a product, system, or service will perform its intended function adequately for a specified period of time, or will operate in a defined environment without failure
+
+--- Slide 22 ---
+# Why Design for Reliability?
+# Enhances customer satisfaction
+  Reduces warranty costs
+  Improves brand reputation
+  Reduces total lifecycle cost
+  Ensures safety and compliance
+
+--- Slide 23 ---
+# Reliability in Product Life Cycle
+# Concept Phase: Requirements specification
+  Design Phase: FMEA, fault-tolerant design
+  Manufacturing: Process capability, quality control
+  Operation: Maintenance strategy, failure analysis
+
+--- Slide 24 ---
+# Design Techniques for Reliability
+# Redundancy: redundancy refers to the duplication or replication of critical components or functions within a system to enhance reliability and ensure continued operation even if one part fails
+  Derating: It is the practice of operating electrical and electronic devices at less than their maximum rated capacity to improve reliability and lifespan
+  Environmental protection
+  Stress-strength analysis: is a reliability engineering method used to assess the probability of failure in a component or system by comparing the applied stress to its inherent strength
+  Modular design: Modular design in software engineering is a design principle that involves subdividing a software system into smaller, independent, and interchangeable components called modules. Each module is designed to perform a specific function or set of related functions, and these modules collectively form the complete software system.
+  Robust design (Taguchi methods): is an approach focused on creating products or processes that perform consistently well, even when faced with variations in manufacturing, usage, or environmental conditions
+
+--- Slide 25 ---
+# Difference between quality and reliability
+# The difference between quality and reliability lies in how a product performs initially versus how it continues to perform over time.
+# [table] Aspect | Quality | Reliability
+# [table] Timeframe | At the time of purchase/use | Over a period of time
+# [table] Measure | Meets specifications and expectations | Performs consistently without failure
+# [table] Example | A sharp, new LED TV with vibrant colors | A washing machine that works well for 10 years
+# [table] Focus | Initial features and performance | Long-term dependability
+
+--- Slide 26 ---
+# Example: Reliable Web Server System
+  Imagine you're part of a team that has developed a web server for an e-commerce website.
+  ✅ High Reliability means:
+  The server runs 24/7 without crashing.
+  It can handle high user traffic during sales events.
+  It recovers quickly from minor failures (using redundancy or failover).
+  It operates for months or years without unexpected downtime.
+  ❌ Low Reliability would be:
+  The server crashes frequently, requiring restarts.
+  It lags or becomes unresponsive under moderate load.
+  Users lose data during transactions.
+  It needs frequent maintenance or patching to function properly.
+
+--- Slide 27 ---
+# Example – Automotive ECU Design
+# High vibration environment
+  Use of conformal coating for moisture resistance
+  Redundant power supplies for fail-safe operation
+  MTBF target: 100,000 hours
+  FMEA revealed thermal stress as major issue → Improved heat sinks
+
+--- Slide 28 ---
+# Testing for Reliability
+# Accelerated Life Testing (ALT)
+  Highly Accelerated Life Testing (HALT)
+  Burn-in Testing
+  Environmental Stress Screening (ESS)
+
+--- Slide 29 ---
+# Case Study – Smartphone Battery Reliability
+# Frequent customer complaints on overheating
+  Root cause: Charging circuit component failure
+  Solution: Improved thermal pad placement + component derating
+  Outcome: MTBF improved by 45%
+
+--- Slide 30 ---
+# Summary
+# Reliability is designed, not tested in.
+  Tools like FMEA and FTA help identify and mitigate failure risks
+  Robust design ensures long-term performance and customer trust
+
+--- Slide 31 ---
+# Key Reliability Concepts
+# MTTF – Mean Time to Failure (non-repairable items)
+  MTBF – Mean Time Between Failures (repairable items)
+  Failure Rate (λ)
+  Reliability Function (R(t))
+
+--- Slide 32 ---
+# MTBF (Mean Time Between Failures)
+# MTBF is a key reliability metric used to predict the average time between system failures for repairable systems.

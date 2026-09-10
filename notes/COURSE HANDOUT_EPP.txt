@@ -1,0 +1,213 @@
+
+==============================================================================
+FILE: COURSE HANDOUT_EPP.docx
+==============================================================================
+KALINGA INSTITUTE OF INDUSTRIAL TECHNOLOGY
+(KIIT Deemed to be University)
+SCHOOL OF MECHANICAL ENGINEERING
+SPRING SEMESTER 2026
+COURSE HANDOUT
+Date: 9th July 2026
+Course Code:   EX40003
+Course title: Engineering Professional Practice
+L-T-P Structure: 2:0:0
+Course Coordinator:Mr. Pradeep Kandula
+Course Objective(s):
+Engineers are expected to perform their tasks responsibly and ethically, following professional standards and guidelines.  This course allows the students to understand the roles and responsibilities of engineers in society, learn professional standards, codes of ethics, issues concerning employment contracts and other legal matters, and skills of working in teams, and to effectively communicate.
+Course (learning) outcomes: At the end of the course, the students will be able to:
+[table] CO1: | Know (a) the features of engineering as a profession, (b) the roles and responsibilities of engineers in society, and (c) the skills for working in teams
+[table] CO2: | Realize the use of professional standards, codes of ethics, legal provisions surrounding engineering functions
+[table] CO3: | Apply the above-stated standards, codes, legal provisions, and group communication skills in their decision-making situations
+[table] CO4: | Break down a complex problem into smaller manageable tasks
+[table] CO5: | Compare among alternatives in situations of uncertainty, risk and ambiguity
+[table] CO6: | Design engineering solutions to industrial environmental and social problems
+CO1:
+Know (a) the features of engineering as a profession, (b) the roles and responsibilities of engineers in society, and (c) the skills for working in teams
+CO2:
+Realize the use of professional standards, codes of ethics, legal provisions surrounding engineering functions
+CO3:
+Apply the above-stated standards, codes, legal provisions, and group communication skills in their decision-making situations
+CO4:
+Break down a complex problem into smaller manageable tasks
+CO5:
+Compare among alternatives in situations of uncertainty, risk and ambiguity
+CO6:
+Design engineering solutions to industrial environmental and social problems
+Course Contents
+Engineering and Engineer
+Engineering as a discipline and a profession; Attributes and functions of a practicing engineer; and Engineer as a problem solver, designer, and change agent.
+Selected Functions of Engineering
+Designing for safety and reliability; Quality and productivity management; Dealing with problem complexity, uncertainty, risk, and ambiguity; Project management; and Managerial functions such as planning, organizing, motivating, and controlling; Costing and accounting.
+Professional Aspects of Engineering
+Accreditation, certification, and licensing; Ethical issues: Ethics and morality, ethical dilemmas, codes of ethics, professional conduct, nature and role of professional societies, engineering standards; Legal issues—Legal forms of business organizations, employment contracts, trademarks, patents, copyrights, trade secrets, professional liability, contractual agreements, environment and information technology laws, and international legal framework such as WTO.
+Group Dynamics
+Individual cognition; Dynamics of working in teams/groups; Interacting with stakeholders; Dealing with multicultural environments; Team and group communication; and Negotiation and conflict resolution.
+9. Text Book:
+Shrestha, R. K. and Shrestha, S. K., Textbook of Engineering Professional Practice, 3rd Edition, Heritage Publishers and Distributors Pvt. Ltd, 2020.
+Reference Books
+1. Habash, R. Professional Practice in Engineering and Computing: Preparing for Future Careers, 1st Edition, Boca Raton: CRC Press, 2019.
+2. Walesh, S.G., Engineering Your Future: The Professional Practice of Engineering, 3rd Edition, Wiley, 2012.
+3. Subramaniam, R., Professional Ethics, 2nd Edition, Oxford University Press, 2017. 4. Lectures note on Engineering Professional Practice provide by Concerned faculty members.
+10. Lesson plan
+[table] Chapters | Contents | No. of Lectures
+[table] Engineering and Engineer | Introduction | 01
+[table]  | Engineering as a discipline and a profession | 01
+[table]  | Attributes and functions of a practicing engineer | 01
+[table]  | Engineer as a problem solver, designer, and change agent | 01
+[table] Assignment-1 and Activity-1
+[table] Selected Functions of Engineering | Designing for safety and reliability | 01
+[table]  | Quality and productivity management | 01
+[table]  | Dealing with problem complexity, uncertainty, risk, and ambiguity | 01
+[table]  | Project management | 02
+[table]  | Managerial functions such as planning, organizing, motivating, and controlling | 01
+[table]  | Costing and accounting | 02
+[table] Assignment-2 and Activity-2
+[table] Quiz-1 (Before Mid-Semester Exam)
+[table] Mid-Semester Exam
+[table] Professional Aspects of Engineering | Accreditation, certification, and licensing | 01
+[table]  | Ethical issues: Ethics and morality, ethical dilemmas | 01
+[table]  | Codes of ethics, professional conduct | 01
+[table]  | Nature and role of professional societies, engineering standards | 01
+[table]  | Legal issues—Legal forms of business organizations | 01
+[table]  | Employment contracts, trademarks, patents, copyrights, trade secrets, professional liability, contractual agreements | 01
+[table]  | Environment and information technology laws | 01
+[table]  | International legal framework such as WTO | 01
+[table] Assignment-3 and Activity-3
+[table] Group Dynamics | Individual cognition; Dynamics of working in teams/groups | 01
+[table]  | Interacting with stakeholders; Dealing with multicultural environment | 01
+[table]  | Team and group communication | 01
+[table]  | Negotiation and conflict resolution | 01
+[table] Assignment-4 and Activity-4
+[table] Quiz-2 (Before End-Semester Exam)
+[table]  | Total | 24
+Chapters
+Contents
+No. of Lectures
+Engineering and Engineer
+Introduction
+01
+Engineering as a discipline and a profession
+01
+Attributes and functions of a practicing engineer
+01
+Engineer as a problem solver, designer, and change agent
+01
+Assignment-1 and Activity-1
+Selected Functions of Engineering
+Designing for safety and reliability
+01
+Quality and productivity management
+01
+Dealing with problem complexity, uncertainty, risk, and ambiguity
+01
+Project management
+02
+Managerial functions such as planning, organizing, motivating, and controlling
+01
+Costing and accounting
+02
+Assignment-2 and Activity-2
+Quiz-1 (Before Mid-Semester Exam)
+Mid-Semester Exam
+Professional Aspects of Engineering
+Accreditation, certification, and licensing
+01
+Ethical issues: Ethics and morality, ethical dilemmas
+01
+Codes of ethics, professional conduct
+01
+Nature and role of professional societies, engineering standards
+01
+Legal issues—Legal forms of business organizations
+01
+Employment contracts, trademarks, patents, copyrights, trade secrets, professional liability, contractual agreements
+01
+Environment and information technology laws
+01
+International legal framework such as WTO
+01
+Assignment-3 and Activity-3
+Group Dynamics
+Individual cognition; Dynamics of working in teams/groups
+01
+Interacting with stakeholders; Dealing with multicultural environment
+01
+Team and group communication
+01
+Negotiation and conflict resolution
+01
+Assignment-4 and Activity-4
+Quiz-2 (Before End-Semester Exam)
+Total
+24
+11. Assessment components:
+[table] S No. | Assessment Component | Duration | Weightage / Marks | Time | Nature of the Component
+[table] 1 | Mid Semester Examination | As per the academic calendar | 20 | 90 Minutes | Closed Book
+[table] 2 | End Semester Examination | As per the academic calendar | 50 | 3 Hours | Closed Book
+[table] 3 | Active learning activities: Problem solving / Critical thinking / Creation / Interactivity focus / Quiz / reflection | Throughout the semester as per the schedule specified in the lesson plan | 30 | Specified in the lesson plan | Open Book/Closed Book
+S No.
+Assessment
+Component
+Duration
+Weightage / Marks
+Time
+Nature of the Component
+1
+Mid Semester Examination
+As per the academic calendar
+20
+90 Minutes
+Closed Book
+2
+End Semester Examination
+As per the academic calendar
+50
+3 Hours
+Closed Book
+3
+Active learning activities:
+Problem solving / Critical thinking / Creation / Interactivity focus / Quiz / reflection
+Throughout the semester as per the schedule specified in the lesson plan
+30
+Specified in the lesson plan
+Open Book/Closed Book
+12. Assessment plan for active learning activities:
+[table] S No | Active learning Assessment Component | Duration | Weightage / Marks | Date and Time | Nature of the Component
+[table] 1 | Interactive focus | specified in the lesson plan | 12 | Throughout the Semester | Presentation
+[table] 2 | Critical thinking |  |  |  | Report
+[table] 3 | Creation |  |  |  | Report/Model
+[table] 4 | Assignment |  | 12 |  | Individual submission
+[table] 5 | Quiz | 1 hour | 6 | As per lesson plan | Test/Exam
+S No
+Active learning Assessment
+Component
+Duration
+Weightage / Marks
+Date and Time
+Nature of the Component
+1
+Interactive focus
+specified in the lesson plan
+12
+Throughout the Semester
+Presentation
+2
+Critical thinking
+Report
+3
+Creation
+Report/Model
+4
+Assignment
+12
+Individual submission
+5
+Quiz
+1 hour
+6
+As per lesson plan
+Test/Exam
+13. Attendance: Every student is expected to be regular (in attendance) in all lecture classes, tutorials, labs, tests, quizzes, seminars etc and in fulfilling all tasks assigned to him / her. Attendance will be recorded and 75% attendance is compulsory.
+14. Chamber consultation hour for doubts clarification: Monday-Friday (8 am to 6 pm)
+Mr. Pradeep Kandula
+Mobile: 8984266460

@@ -1,0 +1,83 @@
+
+==============================================================================
+FILE: LECTURE 3.ppt
+==============================================================================
+
+--- slide 1 ---
+# MODULE II
+  Selected Functions of Engineering
+  Designing for safety and reliability; Quality and productivity management; Dealing with problem complexity, uncertainty, risk, and ambiguity; Project management; and Managerial functions such as planning, organizing, motivating, and controlling; Costing and accounting.
+
+--- slide 2 ---
+# Designing for safety
+
+--- slide 3 ---
+# Introduction to Safety
+  Safety is the condition of being protected from harm, danger, or injury. In engineering, safety refers to the practice of designing systems, processes, and products in a way that minimizes risk to human life, property, and the environment during both normal operation and failure conditions.
+
+--- slide 4 ---
+# Introduction
+  The Design for Safety is known as the application of principles, criteria and techniques of engineering and management to optimize all aspects of security within the constraints of operational efficiency, time and cost in all phases of the lifecycle of a system
+  Design for Safety refers to the professional responsibility of engineers to identify, evaluate, and eliminate or minimize risks to human health, safety, and the environment throughout the design process of any system, product, or infrastructure.
+  It is a planned, disciplined and systematic approach to prevent or reduce accidents or unwanted events throughout the life cycle of a system.
+  The Design for Safety first gained importance in the 1950s, especially by the Air Force of the United States, after reaching the conclusion that a process based on trial and error and continuous improvement in the design and fabrications planes would never be viable. From this development was born the well - known MIL-STD-882 standard, which is still in force today.
+
+--- slide 5 ---
+# Basic Principles Governing Design for Safety
+  Principle 1: Security begins in the early stages of design, development, testing, and design reviews. 
+  It is essential to establish hazard identification processes that can be controlled by applying changes or improvements to the design. The sooner the system and its security weaknesses are analysed, the easier, faster, and cheaper the change implementation will be.
+
+--- slide 6 ---
+  Principle 2: It is necessary to learn from the deficiencies of previous designs to avoid their recurrence. 
+  If we do not apply the lessons learned in the previous designs (lessons learned,  return of experience), our design will never advance since it will always start from the same starting point.
+  
+  Principle 3: The security requires application of engineering and management techniques to control hazards in a system. 
+  A security program must be planned and implemented so that security analyses are integrated with other factors that impact management decisions.
+
+--- slide 7 ---
+# Key Considerations in Design for Safety
+  Risk Assessment: Identify potential hazards and risks associated with the product or environment. Conduct thorough risk assessments to evaluate possible dangers and their consequences.
+  User Training and Education: If a product or system requires user interaction, provide clear and comprehensive training and education materials to ensure proper use.
+  Ergonomics: Ergonomic design principles aim to create products and environments that are comfortable, efficient, and user-friendly, reducing the risk of musculoskeletal disorders and discomfort.
+  Redundancy and Fail-Safes: Implement redundancy and fail-safe mechanisms in critical systems to prevent catastrophic failures. These systems should still function safely in the event of a primary system failure.
+
+--- slide 8 ---
+# Key Considerations in Design for Safety
+  Accessibility: Ensure that products and environments are accessible to people of all abilities, including those with disabilities. Compliance with accessibility standards is essential.
+  Material Selection: Choose materials that are safe for both users and the environment. Ensure that materials do not release harmful chemicals or pose a threat in the event of a fire or other emergencies.
+  Human-Machine Interface: For digital interfaces and machinery, a user-friendly HMI is crucial. It should be intuitive, with clear instructions and safeguards in place to prevent user errors.
+  Product Lifecycle Considerations: Safety should be a consideration not only during the product’s design phase but throughout its entire lifecycle, including manufacturing, use, and disposal.
+
+--- slide 9 ---
+# Various factors of Design for Safety in Engineering
+  1. Hardware Safety
+  Electrical Protection: Designing circuits to avoid short circuits, overheating, and electrical fires (e.g., fuses, thermal cutoffs).
+  EMI Shielding: Preventing electromagnetic interference that can disrupt system function or harm users.
+  Safe Power Supply Design: Ensuring stable voltage and isolation to avoid shocks or component damage.
+  Redundant Components: Using backup components to maintain safety if primary ones fail (e.g., dual power supplies in servers).
+
+--- slide 10 ---
+  2. Software Safety
+  Safe Coding Practices: Preventing buffer overflows, race conditions, or memory leaks that can crash systems or cause unsafe behavior.
+  Exception Handling: Ensuring the software handles unexpected situations (e.g., sensor failure in a robot) without dangerous results.
+  Real-Time Operating Systems (RTOS): Used in critical applications like medical devices or automotive ECUs to ensure time-bound and predictable behavior.
+  Fail-Safe Defaults: Systems should default to a safe state when errors are detected (e.g., stopping a robot arm on sensor failure).
+
+--- slide 11 ---
+  3. Cyber-Physical Safety
+  Secure Communication: Preventing unauthorized control over connected systems (e.g., hacked pacemakers or industrial PLCs).
+  Sensor Validation: Cross-verifying sensor inputs to prevent erroneous data leading to unsafe actions.
+  User Interface Design: Preventing accidental input or misinterpretation (e.g., clear alerts, confirmation for critical actions).
+
+--- slide 12 ---
+# Safety AnalysisTools
+  Failure Mode and Effects Analysis (FMEA)
+  FMEA is a systematic methodology used to identify potential failures in a system, process, or product, and to assess the severity, likelihood, and detectability of those failures. It aims to proactively identify and address potential problems before they occur, ultimately improving reliability and reducing risks. 
+  
+  2. Fault Tree Analysis (FTA)
+  Fault Tree Analysis (FTA) is a top-down, deductive approach used to analyze potential system failures. It visually represents the logical relationships between an undesired event (the "top event") and its contributing causes, using a diagram composed of events and logic gates. FTA helps identify root causes, assess risks, and improve system reliability and safety.
+
+--- slide 13 ---
+# Safety AnalysisTools
+  3. Hazard and Operability Study (HAZOP)
+  A Hazard and Operability Study (HAZOP) is a structured, systematic analysis used to identify potential hazards and operational problems in a complex system, often a process facility. It's a crucial tool for enhancing safety, particularly in industries like chemical processing, and helps prevent accidents and ensure efficient operations.

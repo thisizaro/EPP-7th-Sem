@@ -1,0 +1,87 @@
+
+==============================================================================
+FILE: LECTURE 2.ppt
+==============================================================================
+
+--- slide 1 ---
+# Lecture 2
+
+--- slide 2 ---
+# Content
+  Attributes and functions of a practicing engineer
+  Engineer as a problem solver
+  Engineer as a designer
+  Engineer as a change agent
+
+--- slide 3 ---
+# Attributes and functions of a practicing engineer
+  Who is a Practicing Engineer?
+  Importance of engineers in modern society
+  Scope: From concept to reality – transforming ideas into practical solutions
+
+--- slide 4 ---
+# Who is a Practicing Engineer
+  A practicing engineer is someone who applies engineering principles to solve real-world problems and is actively involved in the engineering profession
+  A practicing engineer can be a Professional Engineer (PE) who is licensed to offer engineering services to the public or someone who is gaining experience under the supervision of a PE.
+
+--- slide 5 ---
+# Key Attributes of a Practicing Engineer
+  Technical Proficiency – Mastery in core engineering principles
+  Ethical Integrity – Adheres to codes of ethics and professional conduct
+  Problem Solving Skills – Analytical and innovative mindset
+  Communication Skills – Effective oral and written communication
+  Teamwork and Collaboration – Works well in multidisciplinary teams
+  Adaptability and Lifelong Learning – Stays updated with technological advancements
+
+--- slide 6 ---
+# Additional Attributes
+  Project Management Skills – Planning, executing, and leading projects
+  Decision Making under Constraints – Balancing cost, time, quality, and safety
+  Social and Environmental Responsibility – Understanding sustainability and societal impact
+  Leadership Qualities – Influencing, guiding, and mentoring others
+
+--- slide 7 ---
+# Core Functions of a Practicing Engineer
+  Design and Development – Creating products, processes, or systems
+  Analysis and Testing – Evaluating performance and ensuring quality
+  Implementation and Operation – Overseeing production and daily functions
+  Maintenance and Support – Ensuring long-term functionality
+
+--- slide 8 ---
+# Engineer as a problem solver
+
+--- slide 9 ---
+# Engineer as a designer
+  The engineering design process is a series of steps that engineers follow to find a solution to a problem. The steps include problem solving processes such as, for example, determining your objectives and constraints, prototyping, testing and evaluation.
+
+--- slide 10 ---
+# Engineer as a change agent
+  A change agent is someone who:
+  Identifies areas for improvement
+  Initiates innovation
+  Implements new solutions
+  Influences others toward positive transformation
+
+--- slide 11 ---
+  Engineer as a Change Agent: Key Aspects
+  
+  1. Technological Transformation
+  Engineers introduce new technologies (e.g., AI, renewable energy, electric vehicles).
+  Example: Electrical engineers helped shift from fossil fuels to solar and wind power, transforming the energy sector.
+  2. Solving Societal Challenges
+  Engineers design systems to solve global issues like clean water, climate change, healthcare access.
+  Example: Engineers Without Borders (EWB) works to design low-cost water purification systems in rural areas.
+  3. Sustainable Development
+  Engineers promote eco-friendly designs and sustainable practices.
+  Example: Green buildings, biodegradable materials, and energy-efficient transport systems.
+
+--- slide 12 ---
+  4. Economic Growth
+  By developing efficient products and systems, engineers boost productivity and economic development.
+  Example: Automation in manufacturing has revolutionized global supply chains.
+  5. Digital Innovation
+  Engineers are central to the digital revolution, creating smart systems and AI-based solutions.
+  Example: Software engineers developing health apps that monitor and predict disease.
+  6. Disaster Management & Recovery
+  Engineers help design systems for early warning, rescue operations, and rebuilding.
+  Example: Structural engineers redesign buildings to be earthquake-resistant.

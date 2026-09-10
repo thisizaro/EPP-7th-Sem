@@ -1,0 +1,615 @@
+
+==============================================================================
+FILE: Lecture 9 Quality Engineering.ppt
+==============================================================================
+
+--- notes 1 ---
+  *
+  Click to edit Master text styles
+  Second level
+  Third level
+  Fourth level
+  Fifth level
+  *
+
+--- slide 2 ---
+# Basics Of Quality
+  By
+  Dr. Priyabrata Mohapatra
+
+--- slide 3 ---
+# Introduction
+  Two major factors of success in any organization are market demand & profitability.
+  Factors influencing the competitive edge of a company are the unit cost, product quality and lead time. 
+  Best approach of product quality is to build quality into the product and process right at the process & product design stage.
+  Quality may also be improved at the production stage by using statistical process control technique
+
+--- slide 4 ---
+# What is Quality
+  A product or service of good quality if it meets the needs and expectations of customer.
+  
+  According to Dr. W.R.Spriegel , “ The quality of a product may be defined as the sum of a number of related characteristics such as shape, dimension, composition, strength, workmanship, adjustment, finish and color.”
+
+--- slide 5 ---
+  Quality can be expressed as a ratio:
+  
+  Quality = P/E
+  P: Performance and Result
+  E: Expectations of customers
+
+--- slide 6 ---
+  Two aspects of quality: 
+  	features: more features that meet customer needs = higher quality
+  	freedom from trouble: fewer defects = higher quality
+
+--- slide 7 ---
+# Quality As customer Perspective
+  Fitness for Use
+   How well product or service
+   does what it supposed to do
+  Quality Design
+  Design quality characteristics
+   into a product or service
+  A Mercedes or A Ford  are equally fit  for use but with different design dimensions
+
+--- slide 8 ---
+# Introduction
+  Q—  Quest for excellence
+  U—Understanding for Customer need
+  A—Action to achieve customer Appreciation
+  L— Leadership Determination to be leader
+  I—  Involving all people
+  T—Team spirit to work for common goal 
+  Y—Yard stick to measure process
+
+--- slide 9 ---
+  Quest for excellence
+
+--- slide 10 ---
+  What does the Customer Want?
+  What are the preferred Channel?
+  What is their identity with the brands?
+  What does the personnel value that influences their decision ?
+  What are the topic that matter?
+  What are the key traits of their influence?
+  What message stimulates them to desired action?
+  What drives their behavior most?
+  Customer need
+
+--- slide 11 ---
+# Quality closely linked with customer service
+
+--- slide 12 ---
+# Leadership
+
+--- slide 13 ---
+# Team Work
+
+--- slide 14 ---
+# Yard stick to measure process
+  To measure the performance
+
+--- slide 15 ---
+# Quality is not just about product-it include whole customer satisfaction
+  After sale service
+  Product reliability
+  Cost of Ownership
+  Buying processes
+  QUALITY
+
+--- slide 16 ---
+# Quality Dimensions
+  Performance
+  Features
+  Reliability
+  Conformance 
+  Durability
+  Serviceability
+  Aesthetics
+  Perceived Quality
+
+--- slide 17 ---
+# Performance
+  For Automobile Industry, performance  depends like acceleration, handling, cruising, speed, Comfort
+  For TV, performance like Clarity, colour, sound
+
+--- slide 18 ---
+  For Service business say Fast food and Airline  performance means promote service
+  
+  A 100-watt light bulb provides greater candlepower than a 60-watt bulb, yet few customers would regard the difference as a measure of quality. The bulbs simply belong to different performance classes. 
+  
+  So the question of whether performance differences are quality differences may depend on circumstantial preferences-but preferences based on functional requirements, not taste.
+
+--- slide 19 ---
+# Features
+  Features are Bells and Whistles of the product and service
+
+--- slide 20 ---
+# Features identification
+  Feature ID
+  Feature descriptions
+  Operations
+  Tool access directions
+  Machining time(UT)
+  F1
+  Planner surface
+  Milling
+  (0, 1, 0)
+  1
+  F2
+  Planner surface
+  Milling
+  (0, 0, -1)
+  1
+  F3
+  Two pockets arranged as a replicated feature
+  Milling
+  (1, 0, 0)
+  1
+  F4
+  Four holes arranged as a replicated feature
+  Drilling
+  (1, 0, -1)
+  1
+  F5
+  Step
+  Milling
+  (1, 0, 0)
+  1
+  F6
+  Protrusion (rib)
+  Milling
+  (0, 1, 0)
+  1
+  F7
+  Boss
+  Milling
+  (cos 45, 0, -sin45)
+  1
+  F8
+  Compound hole
+  Drilling
+  Reaming
+  Boring
+  (cos 45, 0, -sin45)
+  1
+  F9
+  Protrusion (rib)
+  Milling
+  (0, -1, 0)
+  1
+  F10
+  Compound hole
+  Drilling
+  Reaming
+  Boring
+  (0, 0, -1)
+  1
+  F11
+  Nine holes arranged in a replicated feature
+  Drilling
+  Tapping
+  (0, 0, -1)
+  1
+  F12
+  Pocket
+  Milling
+  (-1, 0, 0)
+  1
+  F13
+  step
+  Milling
+  (-1, 0, 0)
+  1
+  F14
+  Compound hole
+  Reaming
+  Boring
+  (0, 0, 1)
+  1
+  Machine Configuration
+  3-axis Machine
+  4-axis Machine
+  Characteristics of machining features
+
+--- slide 21 ---
+# Reliability
+  The probability of a product malfunctioning or failing within a specified time period. 
+  Among the most common measures of reliability are the mean time to first failure, the mean time between failures, and the failure rate per unit time. 
+  Because these measures require a product to be in use for a specified period, they are more relevant to durable goods than to products and services that are consumed instantly.
+
+--- slide 22 ---
+  Conformance :
+  
+  Conformance, or the degree to which a product’s design and operating characteristics meet established standards.
+  For Example: For a part, it is whether this part is right size
+  For a Restaurant, it is whether food is cooked as per your request
+  One drawback of this approach is the problem of “tolerance stack-up”: when two or more parts are to be fit together, the size of their tolerances often determines how well they will match
+  To address this problem, a more imaginative approach to conformance has emerged.
+
+--- slide 23 ---
+  It is closely associated with Japanese manufacturers and the work of Genichi Taguchi, a prizewinning Japanese statistician. Taguchi begins with the idea of “loss function,” a measure of losses from the time a product is shipped
+  
+  These losses include warranty costs, nonrepeating customers, and other problems resulting from performance failure.
+  
+  Taguchi then compares such losses to two alternative approaches to quality: on the one hand, simple conformance to specifications, and on the other, a measure of the degree to which parts or products diverge from the ideal target or center.
+
+--- slide 24 ---
+  He demonstrates that “tolerance stack-up” will be worse—more costly—when the dimensions of parts are more distant from the center than when they cluster around it, even if some parts fall outside the tolerance band entirely.
+   According to Taguchi’s approach, production process 1 in the Exhibit is better even though some items fall beyond specification limits. Traditional approaches favor production process 2. The challenge for quality managers is obvious.
+
+--- slide 25 ---
+# Durability
+  A measure of product life, durability has both economic and technical dimensions
+  Technically, durability can be defined as the amount of use one gets from a product before it deteriorates. 
+  After so many hours of use, the filament of a light bulb burns up and the bulb must be replaced
+
+--- slide 26 ---
+  One-hoss shays---Repair is impossible
+  
+  Consumers must weigh the expected cost, in both dollars and personal inconvenience
+  
+  Durability, then, may be defined as the amount of use one gets from a product before it breaks down and replacement is preferable to continued repair.
+
+--- slide 27 ---
+# Serviceability
+  Caterpillar guarantees delivery of repair parts anywhere in the world within 48 hours; a competitor offers the free loan of farm equipment during critical periods should its customers’ machines break down.
+  General Electric, Pillsbury, Procter & Gamble, Polaroid, Whirlpool, Johnson & Johnson, and other companies have sought to preempt consumer dissatisfaction by installing toll-free telephone hot lines to their customer relations departments.
+
+--- slide 28 ---
+# Aesthetics
+  Aesthetics—how a product looks, feels, sounds, tastes, or smells—is clearly a matter of personal judgment and a reflection of individual preference
+
+--- slide 29 ---
+# Perceived Quality
+  Reputation is the primary stuff of perceived quality
+  
+  In the early 1980s, Maytag introduced a new line of dishwashers. Needless to say, salespeople immediately emphasized the product’s reliability—not yet proven—because of the reputation of Maytag’s clothes washers and dryers
+
+--- slide 30 ---
+  Consumers do not always have complete information about a product’s or service’s attributes; indirect measures may be their only basis for comparing brands.
+
+--- slide 31 ---
+# Example
+
+--- slide 32 ---
+# Example of Dimensions of Quality
+  Dimension
+  Product Example
+  Laser Printer
+  Service Example
+  Checking Account at a Bank
+  Performance
+  Pages per minute, 
+  Print density
+  Time to process customer request
+  Features
+  Multiple paper trays
+  Colour Capability
+  Automatic bill paying
+  Reliability/Durability
+  Mean time between failures 
+  Estimated time to obsolescence
+  Expected life of major companies
+  Variability of time to process request 
+  Keeping Pace with industry trends
+  Serviceability
+  Availability of authorized repair centres
+  Number of copies per print cartridge 
+  Modular Design
+  Online reports 
+  Ease of getting updated information
+  Aesthetics
+  Control button layout
+  Case style
+  Courtesy of dealer
+  Appearance of bank lobby
+  Courtesy of teller
+  Perceived Quality
+  Brand name recognition 
+  Rating in consumer
+  Reports
+  Endorsed by community leaders
+
+--- slide 33 ---
+# Quality in Different Applications
+  Area
+  Examples
+  Airlines
+  On Time, Comfortable, Low-cost Service
+  Health-Care
+  Correct Diagnosis, minimum wait time, Lower Cost, Security,
+  Food Service
+  Good Product, Fast Delivery, Good Environment
+  Postal Services
+  Fast Delivery, Correct Delivery, Cost Containment
+  Academia
+  Proper Preparation for future, on-time knowledge delivery
+  Consumer Products
+  Properly made, defect free, cost effective
+  Insurance
+  Payoff on time, Reasonable cost
+  Military
+  Rapid Deployment, decrease wages, no graft
+  Automotive
+  Defect free Performance,
+  Communication
+  Clearer, faster, cheaper service
+
+--- slide 34 ---
+# The Quality Gurus – Edward Deming
+  Quality is “uniformity and dependability”
+  Focus on SPC and statistical tools
+  “14 Points” for management
+  PDCA method
+  1900-1993
+  1986
+
+--- slide 35 ---
+# PDCA
+  PLAN
+  Do
+  Check
+  ACT
+  Plan for new product development and Production process
+  Create a prototype, test it and collect data from customer
+  Analyze the collected data to measure customer satisfaction
+  Fully implemented the new design /act on collected feedback
+
+--- slide 36 ---
+  Engineering,  Procurement, Construction and Installation
+
+--- slide 37 ---
+# Operation Wrath of God
+  Fifteen people divided into five squads: 
+  Aleph  two trained killers; 
+  Bet two guards who would shadow the Alephs; 
+  Het two agents who would establish cover for the rest of the team by renting hotel rooms, apartments, cars, and so on; 
+  Avin   comprising between six and eight agents who formed the backbone of the operation, shadowing targets and establishing an escape route for the Aleph and Bet squads; 
+  Qoph   two agents specializing in communications
+
+--- slide 38 ---
+# Deming’s 14 Points
+  Create constancy of purpose
+  Adopt philosophy of prevention
+  Cease mass inspection
+  Select a few suppliers based on quality
+  Constantly improve system and workers
+  Institute worker training
+  Instill leadership among supervisors
+
+--- slide 39 ---
+  Eliminate fear among employees
+  Eliminate barriers between departments
+  Eliminate slogans
+  Remove numerical quotas
+  Enhance worker pride
+  Institute vigorous training and education programs
+  Develop a commitment from top management to implement  above 13 points
+
+--- slide 40 ---
+# The Quality Gurus – Joseph Juran
+  Quality is “fitness for use”
+  Pareto Principle
+  Cost of Quality
+  General management approach as well as statistics
+  1904 - 2008
+  1951
+
+--- slide 41 ---
+# Cost of Quality
+  Cost of Prevention
+            Cost incurred to prevent poor Quality
+  Quality planning
+  Quality  improvement team, education and training
+  New product review
+  2.   Cost of Appraisal
+            Cost incurred to determine the degree of conformance to  quality requirement
+  Scrap, rework, re testing
+  3. Internal failure cost
+  4. External Failure Cost
+  Inspection, testing, auditing  etc
+  Customer Return, Transportation,  Warranty Claim
+
+--- slide 42 ---
+  Total Cost
+  Failure or Appraisal Cost
+  Minimum Total Cost
+  Prevention cost
+  Quality  of Product
+  Optimum Cost Policy
+
+--- slide 43 ---
+# The Quality Gurus –  Philip B. Crosby
+  Philosophies of Quality management
+   Zero Defects 
+  Quality Management Maturity Grid
+  1926 - 2001
+  1979
+
+--- slide 44 ---
+# Quality Management
+  It is a process that ensures the quality of the product or service throughout its life cycle
+  Quality Management
+  Monitoring
+  Objective
+  Testing
+  Analysis
+  Processes
+  Improvement
+  Procedures
+  Effectiveness
+  Audit
+  Control
+  Measures
+
+--- slide 45 ---
+# Components of Quality Management
+  Quality Planning
+  Quality Control
+  Quality Improvement
+  Quality Assurance
+
+--- slide 46 ---
+# Quality Planning
+  Quality Control planning is the first step.
+  Requirement must be identified. 
+  A criteria need to be set.
+  Important procedure must be recognized as a part of plan.
+
+--- slide 47 ---
+# Quality Control
+  Quality control needed to review the quality of product or services. 
+  Inspection and testing is necessary to identify problems and deflects that need correction.
+
+--- slide 48 ---
+# Quality Assurance
+  Companies need to assure defects and mistakes are avoided in the manufacturing of goods or the deliver of services. 
+  Quality assurance guarantees consistent results.
+  Quality control focused on providing confidence that quality requirement will be fulfilled
+
+--- slide 49 ---
+# Quality Improvement
+  There is always a room for improvement.
+  Through quality improvement, the result can be measured and possible improvement in product and services can be made
+
+--- slide 50 ---
+# Zero Defect
+  Zero Defects is a management tool aimed at the reduction of defects through prevention.
+   It is directed at motivating people to prevent mistakes by developing a constant, conscious desire to do their job right the first time
+  it has been primarily adopted within supply chain wherever large volumes of components are being purchased (common items such as nuts and bolts are good examples)
+
+--- slide 51 ---
+# Methodology: Implementing Quality
+
+--- slide 52 ---
+# Methodology: Implementing Quality
+  ISO (International Organization for Standardization)
+       ISO-9000
+       ISO-14000
+  TQM
+  Six-Sigma
+  BPR
+  Taguchi Method
+  Kaizen
+  QFD
+
+--- slide 53 ---
+# Factors Affecting Quality
+  Men
+  Machine 
+  Material
+  Manufacturing Condition
+  Capability to Invest Money
+  Product Design
+  After sale service
+
+--- slide 54 ---
+# Problem Solving Tools for Quality
+  Cause-and-Effect Diagrams
+  Flowcharts
+  Checklists
+  Control Charts
+  Scatter Diagrams
+  Pareto Analysis
+  Histograms
+
+--- slide 55 ---
+# Cause-and-Effect Diagrams
+  Developed by Ishikawa in 1943
+  Called Fishbone Diagram or Ishikawa diagram
+  Explore possible root causes of a problem
+  If process is stable, this diagram helps to decide which causes to investigate for process investigation.
+
+--- slide 56 ---
+  Explore possible root causes of a problem
+
+--- slide 57 ---
+  6Ms are used:
+  Man
+  Method
+  
+  
+  Machines
+  Materials
+  
+  
+  Mother of Nature(Environment)
+  Measurement
+  Policies
+  Procedure
+  Rules
+  Raw material
+  Parts
+  packing
+  Location
+  Time 
+  Temperature
+  Culture
+
+--- slide 58 ---
+  The increased coolant consumption in a factory
+
+--- slide 59 ---
+  A cause and Effect Matrix could be used to prioritize the causes of the problem
+  Prioritizing and selecting the key causes will minimize the need for more statistical evaluation of inputs that are unlikely to have an impact on the output
+
+--- slide 60 ---
+# Making Tea Cause effect Matrix
+
+--- slide 61 ---
+# Flow chart
+  Used to document the sequence of events in a process.
+  A detailed flowchart can identify  bottlenecks, redundant steps, non-value added activities.
+  Order Received
+  Has purchase order for payment received
+  Wait for purchase order
+  Can order quantity be met from stock?
+  Produce as per demand
+  Check due date & lead time & set shipment date
+  Package Product
+  Ship product
+  Received by customer
+  No
+  No
+  Yes
+  Yes
+  Flow chart for incoming order processing
+
+--- slide 62 ---
+# Checklists
+  It facilitates systematic record keeping or data collection
+  Observations are recorded as they happen, which reveals pattern or trends.
+  Simple data check-off sheet designed to identify type of quality problems at each work station; per shift, per machine, per operator
+
+--- slide 63 ---
+# Control Charts
+  Used to monitor & control a process on an ongoing basis.
+  Plots a selected quality characteristics as a function of sample number.
+  Distinguish special causes of variation from common causes of variation.
+  Centre line represents the average value of characteristics being plotted. The UCL and LCL are calculated limits used to show when process is in or out of control
+  Sample no
+  Quality Characteristics
+  CL
+
+--- slide 64 ---
+# Pareto Analysis
+  Identify the critical areas that deserves immediate action.
+  Technique that displays the degree of importance for each element
+  Named after the 19th century Italian economist Alfredo Pareto.
+  Often called the 80-20 Rule (Vital few and trivial many)
+  Principle is that quality problems are the result of only a few problems e.g. 80% of the problems caused by 20% of causes
+
+--- slide 65 ---
+# Histograms
+  Displays large amount of data that are difficult to interpret
+  Histogram reveals whether the process is centered around a target value, degree of variation in the data and whether data meet specification.
+  Help in identifying process capability relative to customer requirements
+  A chart that shows the frequency distribution of observed values of a variable like  service time  at a bank drive-up window.
+
+--- slide 66 ---
+# Scatter Diagrams
+  A graph that shows how two variables are related to one another
+  Often used a s follow-ups to a cause & effect analysis
+  Sales
+  Advertisement

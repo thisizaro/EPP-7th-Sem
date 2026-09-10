@@ -1,0 +1,146 @@
+
+==============================================================================
+FILE: Lecture 7 (Uncertainty Risk).pptx
+==============================================================================
+
+--- Slide 1 ---
+# Dealing with Problem Complexity, Uncertainty, Risk, and Ambiguity
+# By
+  Dr. Bijaya Bijeta Nayak
+
+--- Slide 2 ---
+# Introduction
+# Engineering professionals frequently face challenges that are not straightforward. In the real world, problems are rarely well-defined; instead, they involve multiple variables, conflicting objectives, incomplete data, and external constraint
+  Engineering problems are often complex, uncertain, risky, and ambiguous.
+  Engineers must learn to manage these aspects for effective decision-making.
+  Dealing with problem complexity, uncertainty, risk, and ambiguity is a fundamental skill for modern engineers. Future-ready engineers must be equipped not only with technical knowledge but also with systems thinking, decision-making under uncertainty, and effective risk management capabilities.
+
+--- Slide 3 ---
+# Why CURA Matters
+# Understanding Complexity, Uncertainty, Risk, and Ambiguity (CURA) is crucial because it equips engineers with a structured way of thinking:
+  Complexity → Helps recognize system interdependencies.
+  Uncertainty → Prepares for unknowns and variability.
+  Risk → Focuses attention on consequences and probabilities.
+  Ambiguity → Encourages clear communication and problem framing.
+
+--- Slide 4 ---
+# Problem Complexity
+# Complexity arises when a problem has many interconnected parts, variables, or subsystems, where changes in one element affect others unpredictably.
+
+--- Slide 5 ---
+# Characteristics of Complex Problems
+# Multiple interdependent variables
+  Non-linear cause-and-effect relationships
+  Requires multidisciplinary knowledge
+  May lack a single “right” solution
+
+--- Slide 6 ---
+# Approaches to Handle Complexity:
+# Systems Thinking: Understanding interconnections between subsystems.
+  Modeling and Simulation: Using mathematical/AI models to represent systems.
+  Decomposition: Breaking complex problems into smaller, manageable parts.
+  Collaboration: Engaging experts from different domains.
+
+--- Slide 7 ---
+# Uncertainty
+# Uncertainty refers to incomplete knowledge about a system, process, or future outcome.
+  Types of Uncertainty:
+  Aleatory (Randomness): Due to inherent variability (e.g., material properties, weather).
+  Epistemic (Knowledge-based): Due to lack of data, measurement errors, or limited models.
+
+--- Slide 8 ---
+# Examples in Engineering:
+  Predicting fatigue life of a component under variable loading.
+  Forecasting renewable energy generation (solar/wind).
+  Strategies to Manage Uncertainty:
+  Collect more data (experiments, testing).
+  Use probabilistic methods (Monte Carlo simulation).
+  Apply sensitivity analysis to identify critical factors.
+  Adopt robust design principles.
+
+--- Slide 9 ---
+# Risk
+# Risk is the possibility of an adverse outcome due to uncertainty
+  Risk = Probability × Consequence.
+  Examples in Engineering:
+  Risk of failure in a bridge due to material fatigue.
+  Cybersecurity risk in industrial IoT systems.
+  Financial risk in adopting new technologies.
+
+--- Slide 10 ---
+# Risk Management Process:
+# Risk Identification – What can go wrong?
+  Risk Assessment – Likelihood & severity.
+  Risk Mitigation – Preventive and corrective measures.
+  Risk Monitoring – Continuous tracking and updates.
+
+--- Slide 11 ---
+# Ambiguity
+# Ambiguity arises when information is open to multiple interpretations or when goals and priorities are unclear.
+  Sources of Ambiguity:
+  Poorly defined problem statements.
+  Conflicting stakeholder requirements.
+  Lack of common terminology or standards.
+
+--- Slide 12 ---
+# Examples in Engineering:
+  Ambiguous customer requirements in product design.
+  Policy uncertainty in renewable energy projects.
+  Strategies to Reduce Ambiguity:
+  Improve communication and documentation.
+  Engage stakeholders early and frequently.
+  Use prototyping and iterative design.
+  Develop decision-support tools.
+
+--- Slide 13 ---
+# Interrelation of Factors
+# Complexity increases uncertainty.
+  Uncertainty creates risk.
+  Ambiguity makes assessment and communication difficult.
+  Engineers must balance all four challenges.
+
+--- Slide 14 ---
+
+--- Slide 15 ---
+# Examples/ Case Studies in Engineering:
+# Designing smart manufacturing systems (Industry 4.0)
+  Urban transportation planning
+  Sustainable energy systems integration
+
+--- Slide 16 ---
+# Designing smart manufacturing systems (Industry 4.0)
+# Smart manufacturing (also called Industry 4.0) integrates automation, IoT, AI, robotics, and data analytics to optimize production systems.
+  Why Complex?
+  Multiple interconnected technologies (sensors, robotics, cloud systems, AI algorithms).
+  Data flows across different machines, networks, and decision layers.
+  Cyber-physical systems need integration across hardware and software.
+  Uncertainty Factors:
+  How new technologies will perform at large scale.
+  Data quality and reliability from IoT sensors.
+  Rapid technology evolution — tools chosen today may be outdated tomorrow.
+  Risks:
+  Cybersecurity attacks on automated systems.
+  System downtime due to integration failures.
+  High financial risk from investing in expensive but unproven technologies.
+  Ambiguity:
+  Lack of clear industry standards for interoperability.
+  Different stakeholders (management, operators, IT teams) may interpret “smart manufacturing” differently.
+
+--- Slide 17 ---
+# Urban transportation planning
+# Designing metro systems, bus rapid transit, or smart traffic control involves engineering, policy and social dimensions.
+  Why Complex?
+  Involves roads, rail, traffic signals, pedestrian pathways, vehicles, and human behavior.
+  Multiple stakeholders: government, citizens, transport operators, environmental groups.
+  Huge infrastructure scale — interconnected subsystems (stations, power, signaling, vehicles).
+  Uncertainty Factors:
+  Unpredictable population growth and travel demand.
+  Uncertainty in fuel prices or future mobility trends (e.g., electric vehicles, shared mobility).
+  Data gaps in traffic surveys and travel behavior.
+  Risks:
+  Cost overruns and delays in mega projects.
+  Safety risks (accidents, infrastructure failure).
+  Political risk if the system fails to meet public expectations.
+  Ambiguity:
+  Conflicting goals: some prioritize low-cost solutions, others environmental sustainability.
+  Policy directions (e.g., should funds go to metro rail or road expansion?) may be unclear.
